@@ -1,0 +1,18 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+filterwarnings = [
+    "ignore::pytest.PytestRemovedIn10Warning",
+    "ignore::UserWarning",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "hhgoa2026-voice-rag"
+version = "1.0.0"
+description = "Voice-Enabled RAG Pipeline — HH Goa 2026"
+requires-python = ">=3.11"
+readme = "README.md"
