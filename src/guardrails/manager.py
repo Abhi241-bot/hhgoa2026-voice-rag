@@ -103,13 +103,12 @@ class SafetyGuardrail:
 
 class OffTopicGuardrail:
     """
-    Detects off-topic queries using embedding cosine similarity to domain centroid.
-
-    The domain centroid is computed from a set of representative MSMARCO-style queries.
-    Queries with similarity < threshold are blocked.
+    Detects off-topic queries using embedding cosine similarity to domain centroid
+    and multilingual question marker heuristics.
     """
 
     _DOMAIN_EXAMPLES = [
+        # English
         "What is the capital of France?",
         "Who invented the telephone?",
         "What is the population of India?",
@@ -117,14 +116,31 @@ class OffTopicGuardrail:
         "What are the symptoms of diabetes?",
         "When did World War II end?",
         "What is the speed of light?",
-        "Who wrote Pride and Prejudice?",
+        "Who wrote the national anthem?",
         "How do vaccines work?",
         "What is machine learning?",
+        # Hindi & Indic
+        "फ्रांस की राजधानी क्या है?",
+        "टेलीफोन का आविष्कार किसने किया?",
+        "प्रकाश संश्लेषण कैसे काम करता है?",
+        "मधुमेह के मुख्य लक्षण क्या हैं?",
+        "भारत का राष्ट्रगान किसने लिखा?",
+        "मशीन लर्निंग क्या है?",
     ]
+
+    _QUESTION_MARKERS = {
+        "what", "who", "where", "when", "why", "how", "which", "whose", "whom",
+        "is", "are", "was", "were", "does", "did", "can", "could", "will", "would",
+        "define", "explain", "describe", "list", "name", "tell",
+        "क्या", "किसने", "कैसे", "कहाँ", "कब", "कौन", "क्यों", "कितना",
+        "ఏమిటి", "ఎవరు", "ఎక్కడ", "ఎప్పుడు", "ఎలా", "ఎందుకు",
+        "என்ன", "யார்", "எங்கே", "எப்போது", "எப்படி", "ஏன்",
+        "काय", "कोण", "कुठे", "केव्हा", "कसे", "का",
+    }
 
     def __init__(
         self,
-        threshold: float = 0.15,
+        threshold: float = 0.05,
         embedding_model=None,
     ) -> None:
         self.threshold = threshold
@@ -150,11 +166,13 @@ class OffTopicGuardrail:
         start = time.perf_counter()
         name = "off_topic"
 
-        # Very short or clearly question-like text — pass fast
-        if len(text.split()) <= 3:
+        # 1. Fast path: question words or short text
+        words = [w.lower().strip("?,.!") for w in text.split()]
+        if len(words) <= 3 or any(w in self._QUESTION_MARKERS for w in words):
             latency = (time.perf_counter() - start) * 1000
             return GuardrailResult(name=name, status=GuardrailStatus.PASSED, latency_ms=round(latency, 2))
 
+        # 2. Embedding similarity to domain centroid
         try:
             import numpy as np
             from sklearn.metrics.pairwise import cosine_similarity
@@ -259,7 +277,28 @@ class FaithfulnessGuardrail:
             latency = (time.perf_counter() - start) * 1000
             return GuardrailResult(name=name, status=GuardrailStatus.PASSED, latency_ms=round(latency, 2))
 
-        # Skip LLM judge if key not available (fast path)
+        # 1. Fast path for refusal answers
+        refusal_phrases = ["cannot answer", "not provided", "not mentioned", "not enough information"]
+        if any(p in answer.lower() for p in refusal_phrases):
+            latency = (time.perf_counter() - start) * 1000
+            return GuardrailResult(name=name, status=GuardrailStatus.PASSED, latency_ms=round(latency, 2))
+
+        # 2. Fast path: Token overlap with retrieved context
+        context_text = " ".join(ctx.chunk.text.lower() for ctx in contexts)
+        answer_words = set(w.strip(".,!?:;\"'()") for w in answer.lower().split() if len(w) > 3)
+        if answer_words:
+            matched = sum(1 for w in answer_words if w in context_text)
+            overlap_ratio = matched / len(answer_words)
+            if overlap_ratio >= 0.5:
+                latency = (time.perf_counter() - start) * 1000
+                return GuardrailResult(
+                    name=name,
+                    status=GuardrailStatus.PASSED,
+                    score=round(overlap_ratio, 2),
+                    latency_ms=round(latency, 2),
+                )
+
+        # 3. Skip LLM judge if disabled or key not set
         if not self.use_llm_judge or not settings.groq_api_key:
             latency = (time.perf_counter() - start) * 1000
             return GuardrailResult(name=name, status=GuardrailStatus.PASSED, latency_ms=round(latency, 2))

@@ -152,5 +152,233 @@
         "डीप लर्निंग मानव मस्तिष्क के सूचना प्रसंस्करण की नकल करते हुए कई परतों वाले कृत्रिम तंत्रिका नेटवर्क पर आधारित मशीन लर्निंग का एक उपसमूह है।"
       ]
     }
+  },
+  {
+    "query_id": 1009,
+    "Eng_Query": "what is the largest planet in our solar system",
+    "query": "हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है",
+    "target_lang": "hi",
+    "Eng_Answer": "Jupiter is the largest planet in our solar system.",
+    "Answer": "बृहस्पति हमारे सौर मंडल का सबसे बड़ा ग्रह है।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, and slightly less than one-thousandth the mass of the Sun. Jupiter is famous for its Great Red Spot, a giant storm that has raged for centuries.",
+        "Saturn is the second-largest planet in the solar system, famous for its extensive ring system made of ice and rock particles."
+      ],
+      "Translated_passages": [
+        "बृहस्पति सूर्य से पांचवां ग्रह है और सौर मंडल में सबसे बड़ा है। यह एक गैस विशालकाय है जिसका द्रव्यमान सौर मंडल के अन्य सभी ग्रहों के संयुक्त द्रव्यमान से ढाई गुना अधिक है।",
+        "शनि सौर मंडल का दूसरा सबसे बड़ा ग्रह है, जो बर्फ और चट्टान के कणों से बनी अपनी व्यापक वलय प्रणाली के लिए प्रसिद्ध है।"
+      ]
+    }
+  },
+  {
+    "query_id": 1010,
+    "Eng_Query": "how many bones are there in the adult human body",
+    "query": "वयस्क मानव शरीर में कितनी हड्डियाँ होती हैं",
+    "target_lang": "hi",
+    "Eng_Answer": "An adult human skeleton consists of 206 bones.",
+    "Answer": "एक वयस्क मानव कंकाल में 206 हड्डियाँ होती हैं।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "The adult human skeleton typically consists of 206 bones. At birth, humans have around 270 to 300 bones, but many of these fuse together as the individual grows and develops. The longest and strongest bone in the human body is the femur (thigh bone), while the smallest is the stapes located in the middle ear.",
+        "Cartilage and ligaments connect bones together and provide flexibility and shock absorption throughout the skeletal system."
+      ],
+      "Translated_passages": [
+        "वयस्क मानव कंकाल में आमतौर पर 206 हड्डियाँ होती हैं। जन्म के समय, मनुष्यों में लगभग 270 से 300 हड्डियाँ होती हैं, लेकिन जैसे-जैसे व्यक्ति बढ़ता है, इनमें से कई आपस में जुड़ जाती हैं।",
+        "उपास्थि और स्नायुबंधन हड्डियों को एक साथ जोड़ते हैं और पूरे कंकाल तंत्र में लचीलापन प्रदान करते हैं।"
+      ]
+    }
+  },
+  {
+    "query_id": 1011,
+    "Eng_Query": "what is the boiling point of water at sea level",
+    "query": "समुद्र तल पर पानी का क्वथनांक क्या है",
+    "target_lang": "hi",
+    "Eng_Answer": "Water boils at 100 degrees Celsius (212 degrees Fahrenheit) at sea level atmospheric pressure.",
+    "Answer": "समुद्र तल के वायुमंडलीय दबाव पर पानी 100 डिग्री सेल्सियस पर उबलता है।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "The boiling point of water is the temperature at which the vapor pressure of the liquid equals the pressure surrounding the liquid. At standard atmospheric pressure at sea level (1 atmosphere or 101.325 kPa), pure water boils at 100 degrees Celsius (212 degrees Fahrenheit, or 373.15 Kelvin). At higher altitudes where atmospheric pressure is lower, water boils at lower temperatures.",
+        "The freezing point of pure water at 1 atmosphere of pressure is 0 degrees Celsius (32 degrees Fahrenheit)."
+      ],
+      "Translated_passages": [
+        "समुद्र तल पर मानक वायुमंडलीय दबाव (1 वायुमंडल) पर, शुद्ध पानी 100 डिग्री सेल्सियस (212 डिग्री फारेनहाइट) पर उबलता है। उच्च ऊंचाई पर जहां दबाव कम होता है, पानी कम तापमान पर उबलता है।",
+        "1 वायुमंडलीय दबाव पर शुद्ध पानी का हिमांक 0 डिग्री सेल्सियस है।"
+      ]
+    }
+  },
+  {
+    "query_id": 1012,
+    "Eng_Query": "who is known as the father of modern computers",
+    "query": "आधुनिक कंप्यूटर का जनक किसे कहा जाता है",
+    "target_lang": "hi",
+    "Eng_Answer": "Charles Babbage is considered the father of the computer for designing the Analytical Engine, while Alan Turing is the father of modern theoretical computer science.",
+    "Answer": "चार्ल्स बैबेज को कंप्यूटर का जनक और एलन ट्यूरिंग को आधुनिक कंप्यूटर विज्ञान का जनक माना जाता है।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "Charles Babbage, an English mechanical engineer and polymath, originated the concept of a programmable computer. He invented the Difference Engine in 1822 and designed the Analytical Engine in 1837, which contained an Arithmetic Logic Unit, control flow with conditional branching, and integrated memory. Alan Turing later formalized the concepts of algorithm and computation with the Turing machine in 1936.",
+        "Ada Lovelace worked with Babbage and wrote the first algorithm intended to be processed by a machine, making her the world's first computer programmer."
+      ],
+      "Translated_passages": [
+        "चार्ल्स बैबेज ने एक प्रोग्राम करने योग्य कंप्यूटर की अवधारणा की शुरुआत की। उन्होंने 1837 में एनालिटिकल इंजन को डिजाइन किया। एलन ट्यूरिंग ने बाद में 1936 में ट्यूरिंग मशीन के साथ एल्गोरिदम की अवधारणाओं को औपचारिक रूप दिया।",
+        "एडा लवलेस ने बैबेज के साथ काम किया और दुनिया की पहली कंप्यूटर प्रोग्रामर बनीं।"
+      ]
+    }
+  },
+  {
+    "query_id": 1013,
+    "Eng_Query": "what is the process of condensation",
+    "query": "संघनन की प्रक्रिया क्या है",
+    "target_lang": "hi",
+    "Eng_Answer": "Condensation is the physical change of state of matter from gas phase into liquid phase.",
+    "Answer": "संघनन गैस से तरल अवस्था में पदार्थ के परिवर्तन की प्रक्रिया है।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "Condensation is the change of the physical state of matter from the gas phase into the liquid phase. It is the reverse of vaporization. Condensation is an essential part of the water cycle, occurring when water vapor in the air cools and condenses into liquid water droplets, forming clouds, fog, and dew.",
+        "Evaporation is the phase transition in which liquid turns into vapor below its boiling temperature."
+      ],
+      "Translated_passages": [
+        "संघनन गैस अवस्था से तरल अवस्था में पदार्थ की भौतिक स्थिति का परिवर्तन है। यह जल चक्र का एक अनिवार्य हिस्सा है, जो तब होता है जब हवा में जलवाष्प ठंडा होकर बादलों और ओस का निर्माण करता है।",
+        "वाष्पीकरण वह प्रक्रिया है जिसमें तरल अपने क्वथनांक से नीचे वाष्प में बदल जाता है।"
+      ]
+    }
+  },
+  {
+    "query_id": 1014,
+    "Eng_Query": "which ocean is the largest on earth",
+    "query": "पृथ्वी पर सबसे बड़ा महासागर कौन सा है",
+    "target_lang": "hi",
+    "Eng_Answer": "The Pacific Ocean is the largest and deepest of Earth's oceanic divisions.",
+    "Answer": "प्रशांत महासागर पृथ्वी का सबसे बड़ा और गहरा महासागर है।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "The Pacific Ocean is the largest and deepest of the world's five oceans. Extending from the Arctic Ocean in the north to the Southern Ocean in the south, it spans an area of approximately 165.25 million square kilometers (63.8 million square miles), covering about 46% of Earth's water surface and about 32% of its total surface area.",
+        "The Atlantic Ocean is the second-largest ocean, covering approximately 20% of Earth's surface."
+      ],
+      "Translated_passages": [
+        "प्रशांत महासागर दुनिया के पांच महासागरों में सबसे बड़ा और गहरा है। यह लगभग 165.25 मिलियन वर्ग किलोमीटर के क्षेत्र में फैला है, जो पृथ्वी की जल सतह का लगभग 46% हिस्सा कवर करता है।",
+        "अटलांटिक महासागर दूसरा सबसे बड़ा महासागर है, जो पृथ्वी की सतह का लगभग 20% हिस्सा कवर करता है।"
+      ]
+    }
+  },
+  {
+    "query_id": 1015,
+    "Eng_Query": "what is the currency of Japan",
+    "query": "जापान की मुद्रा क्या है",
+    "target_lang": "hi",
+    "Eng_Answer": "The official currency of Japan is the Japanese Yen (JPY, symbol: ¥).",
+    "Answer": "जापान की आधिकारिक मुद्रा जापानी येन (JPY) है।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "The Japanese Yen (symbol: ¥, code: JPY) is the official currency of Japan. It is the third most traded currency in the foreign exchange market after the United States Dollar and the Euro. The New Currency Act of 1871 officially introduced the decimal accounting system for the yen.",
+        "The Bank of Japan is the central bank responsible for issuing banknotes and implementing monetary policy."
+      ],
+      "Translated_passages": [
+        "जापानी येन (चिह्न: ¥, कोड: JPY) जापान की आधिकारिक मुद्रा है। यह विदेशी मुद्रा बाजार में अमेरिकी डॉलर और यूरो के बाद तीसरी सबसे अधिक कारोबार वाली मुद्रा है।",
+        "बैंक ऑफ जापान बैंक नोट जारी करने के लिए जिम्मेदार केंद्रीय बैंक है।"
+      ]
+    }
+  },
+  {
+    "query_id": 1016,
+    "Eng_Query": "what causes acid rain",
+    "query": "अम्लीय वर्षा किसके कारण होती है",
+    "target_lang": "hi",
+    "Eng_Answer": "Acid rain is caused by emissions of sulfur dioxide (SO2) and nitrogen oxides (NOx) reacting with water in the atmosphere.",
+    "Answer": "अम्लीय वर्षा सल्फर डाइऑक्साइड और नाइट्रोजन ऑक्साइड के उत्सर्जन के कारण होती है।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "Acid rain, or acid deposition, is rain or any other form of precipitation that is unusually acidic, meaning that it has elevated levels of hydrogen ions (low pH). It is caused by emissions of sulfur dioxide (SO2) and nitrogen oxides (NOx), which react with water molecules in the atmosphere to produce sulfuric and nitric acids. Major sources include coal-fired power plants, factories, and automobiles.",
+        "Acid rain causes damage to forests, freshwater bodies, soil microbiology, and historic stone buildings and monuments."
+      ],
+      "Translated_passages": [
+        "अम्लीय वर्षा असामान्य रूप से अम्लीय वर्षा या वर्षा का कोई अन्य रूप है। यह सल्फर डाइऑक्साइड (SO2) और नाइट्रोजन ऑक्साइड (NOx) के उत्सर्जन के कारण होता है, जो वातावरण में पानी के अणुओं के साथ प्रतिक्रिया करके सल्फ्यूरिक और नाइट्रिक एसिड का उत्पादन करते हैं।",
+        "अम्लीय वर्षा वनों, ताजे पानी के स्रोतों और ऐतिहासिक स्मारकों को नुकसान पहुँचाती है।"
+      ]
+    }
+  },
+  {
+    "query_id": 1017,
+    "Eng_Query": "who was the first woman to win a Nobel Prize",
+    "query": "नोबेल पुरस्कार जीतने वाली पहली महिला कौन थीं",
+    "target_lang": "hi",
+    "Eng_Answer": "Marie Curie was the first woman to win a Nobel Prize, winning in Physics in 1903 and Chemistry in 1911.",
+    "Answer": "मैरी क्यूरी नोबेल पुरस्कार जीतने वाली पहली महिला थीं।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "Marie Curie was a Polish and naturalized-French physicist and chemist who conducted pioneering research on radioactivity. She was the first woman to win a Nobel Prize (Physics in 1903, shared with Pierre Curie and Henri Becquerel), the first person to win two Nobel Prizes, and the only person to win Nobel Prizes in two different scientific fields (Physics 1903 and Chemistry 1911 for discovering radium and polonium).",
+        "Her daughter Irene Joliot-Curie also won the Nobel Prize in Chemistry in 1935 for synthesis of new radioactive elements."
+      ],
+      "Translated_passages": [
+        "मैरी क्यूरी एक भौतिक विज्ञानी और रसायनज्ञ थीं जिन्होंने रेडियोधर्मिता पर अग्रणी शोध किया। वह नोबेल पुरस्कार जीतने वाली पहली महिला थीं (1903 में भौतिकी) और दो अलग-अलग वैज्ञानिक क्षेत्रों (भौतिकी और रसायन विज्ञान) में नोबेल पुरस्कार जीतने वाली एकमात्र व्यक्ति हैं।",
+        "उनकी बेटी आइरीन जोलियट-क्यूरी ने भी 1935 में रसायन विज्ञान में नोबेल पुरस्कार जीता था।"
+      ]
+    }
+  },
+  {
+    "query_id": 1018,
+    "Eng_Query": "what is the primary function of red blood cells",
+    "query": "लाल रक्त कोशिकाओं का प्राथमिक कार्य क्या है",
+    "target_lang": "hi",
+    "Eng_Answer": "Red blood cells transport oxygen from the lungs to body tissues and carry carbon dioxide back to the lungs.",
+    "Answer": "लाल रक्त कोशिकाएं फेफड़ों से शरीर के ऊतकों तक ऑक्सीजन पहुंचाती हैं।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "Red blood cells (erythrocytes) are the most common type of blood cell in vertebrates. Their primary physiological function is to carry oxygen from the lungs or gills to body tissues and deliver carbon dioxide waste from tissues back to the respiratory organs. This is accomplished using hemoglobin, an iron-rich protein that binds oxygen reversibly.",
+        "White blood cells (leukocytes) are part of the immune system and defend the body against infectious diseases and foreign invaders."
+      ],
+      "Translated_passages": [
+        "लाल रक्त कोशिकाएं (एरिथ्रोसाइट्स) कशेरुकियों में सबसे आम प्रकार की रक्त कोशिकाएं हैं। उनका प्राथमिक कार्य फेफड़ों से शरीर के ऊतकों तक ऑक्सीजन ले जाना और कार्बन डाइऑक्साइड अपशिष्ट को वापस फेफड़ों तक पहुंचाना है। यह हीमोग्लोबिन के माध्यम से किया जाता है।",
+        "श्वेत रक्त कोशिकाएं प्रतिरक्षा प्रणाली का हिस्सा हैं और शरीर को संक्रमण से बचाती हैं।"
+      ]
+    }
+  },
+  {
+    "query_id": 1019,
+    "Eng_Query": "what is renewable energy and give examples",
+    "query": "नवीकरणीय ऊर्जा क्या है और इसके उदाहरण दें",
+    "target_lang": "hi",
+    "Eng_Answer": "Renewable energy is energy derived from natural resources that replenish faster than they are consumed, such as solar, wind, and hydro power.",
+    "Answer": "नवीकरणीय ऊर्जा वह ऊर्जा है जो प्राकृतिक संसाधनों से प्राप्त होती है, जैसे सौर, पवन और जल विद्युत।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "Renewable energy is energy derived from natural resources that replenish themselves naturally on a human timescale, without depleting Earth's resources. Major examples include solar power (photovoltaic and solar thermal), wind power, hydroelectric energy, geothermal energy, ocean tidal/wave energy, and biomass. Renewable energy produces far fewer greenhouse gas emissions compared to burning fossil fuels.",
+        "Fossil fuels such as coal, petroleum, and natural gas are non-renewable because they take millions of years to form."
+      ],
+      "Translated_passages": [
+        "नवीकरणीय ऊर्जा वह ऊर्जा है जो प्राकृतिक संसाधनों से प्राप्त होती है जो मानव समय के पैमाने पर स्वाभाविक रूप से नवीनीकृत होती है। प्रमुख उदाहरणों में सौर ऊर्जा, पवन ऊर्जा, जलविद्युत, भू-तापीय ऊर्जा और बायोमास शामिल हैं।",
+        "कोयला, पेट्रोलियम और प्राकृतिक गैस जैसे जीवाश्म ईंधन गैर-नवीकरणीय हैं।"
+      ]
+    }
+  },
+  {
+    "query_id": 1020,
+    "Eng_Query": "what is the function of the ozone layer",
+    "query": "ओजोन परत का क्या कार्य है",
+    "target_lang": "hi",
+    "Eng_Answer": "The ozone layer absorbs the majority of the Sun's harmful ultraviolet (UV) radiation.",
+    "Answer": "ओजोन परत सूर्य के हानिकारक पराबैंगनी (यूवी) विकिरण को अवशोषित करती है।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "The ozone layer or ozone shield is a region of Earth's stratosphere that contains a high concentration of ozone (O3) molecules. It absorbs 97 to 99 percent of the Sun's medium-frequency ultraviolet light (from about 200 nm to 315 nm wavelength), which otherwise has the potential to damage exposed life forms near Earth's surface and cause skin cancer and cataracts in humans.",
+        "The Montreal Protocol was signed in 1987 to phase out chlorofluorocarbons (CFCs) that were depleting the ozone layer."
+      ],
+      "Translated_passages": [
+        "ओजोन परत पृथ्वी के समताप मंडल का एक क्षेत्र है जो सूर्य के मध्यम आवृत्ति के पराबैंगनी प्रकाश के 97 से 99 प्रतिशत हिस्से को अवशोषित करता है, जो पृथ्वी की सतह पर जीवन को नुकसान पहुंचा सकता है।",
+        "ओजोन परत को नष्ट करने वाले सीएफसी को समाप्त करने के लिए 1987 में मॉन्ट्रियल प्रोटोकॉल पर हस्ताक्षर किए गए थे।"
+      ]
+    }
   }
 ]

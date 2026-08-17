@@ -576,5 +576,821 @@
       "is_single_chunk": true
     },
     "char_count": 140
+  },
+  {
+    "chunk_id": "215083d38d1a62c7",
+    "text": "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, and slightly less than one-thousandth the mass of the Sun. Jupiter is famous for its Great Red Spot, a giant storm that has raged for centuries.",
+    "source_passage_id": "q1009_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1009_en_p0",
+      "language": "en",
+      "query_context": "what is the largest planet in our solar system",
+      "url": "",
+      "original_length": 343,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 343
+  },
+  {
+    "chunk_id": "1ed394da565ec0d5",
+    "text": "Saturn is the second-largest planet in the solar system, famous for its extensive ring system made of ice and rock particles.",
+    "source_passage_id": "q1009_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1009_en_p1",
+      "language": "en",
+      "query_context": "what is the largest planet in our solar system",
+      "url": "",
+      "original_length": 125,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 125
+  },
+  {
+    "chunk_id": "34b2ea9317bccc87",
+    "text": "बृहस्पति सूर्य से पांचवां ग्रह है और सौर मंडल में सबसे बड़ा है। यह एक गैस विशालकाय है जिसका द्रव्यमान सौर मंडल के अन्य सभी ग्रहों के संयुक्त द्रव्यमान से ढाई गुना अधिक है।",
+    "source_passage_id": "q1009_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1009_hi_p0",
+      "language": "hi",
+      "query_context": "हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है",
+      "url": "",
+      "original_length": 171,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 171
+  },
+  {
+    "chunk_id": "6e5c091b1c58d54b",
+    "text": "शनि सौर मंडल का दूसरा सबसे बड़ा ग्रह है, जो बर्फ और चट्टान के कणों से बनी अपनी व्यापक वलय प्रणाली के लिए प्रसिद्ध है।",
+    "source_passage_id": "q1009_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1009_hi_p1",
+      "language": "hi",
+      "query_context": "हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है",
+      "url": "",
+      "original_length": 117,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 117
+  },
+  {
+    "chunk_id": "46eb0f983e0b6df4",
+    "text": "The adult human skeleton typically consists of 206 bones. At birth, humans have around 270 to 300 bones, but many of these fuse together as the individual grows and develops. The longest and strongest bone in the human body is the femur (thigh bone), while the smallest is the stapes located in the middle ear.",
+    "source_passage_id": "q1010_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1010_en_p0",
+      "language": "en",
+      "query_context": "how many bones are there in the adult human body",
+      "url": "",
+      "original_length": 310,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 310
+  },
+  {
+    "chunk_id": "e8003a613347d6c5",
+    "text": "Cartilage and ligaments connect bones together and provide flexibility and shock absorption throughout the skeletal system.",
+    "source_passage_id": "q1010_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1010_en_p1",
+      "language": "en",
+      "query_context": "how many bones are there in the adult human body",
+      "url": "",
+      "original_length": 123,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 123
+  },
+  {
+    "chunk_id": "8a450db425d0218a",
+    "text": "वयस्क मानव कंकाल में आमतौर पर 206 हड्डियाँ होती हैं। जन्म के समय, मनुष्यों में लगभग 270 से 300 हड्डियाँ होती हैं, लेकिन जैसे-जैसे व्यक्ति बढ़ता है, इनमें से कई आपस में जुड़ जाती हैं।",
+    "source_passage_id": "q1010_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1010_hi_p0",
+      "language": "hi",
+      "query_context": "वयस्क मानव शरीर में कितनी हड्डियाँ होती हैं",
+      "url": "",
+      "original_length": 182,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 182
+  },
+  {
+    "chunk_id": "c6104e2cb150b3e9",
+    "text": "उपास्थि और स्नायुबंधन हड्डियों को एक साथ जोड़ते हैं और पूरे कंकाल तंत्र में लचीलापन प्रदान करते हैं।",
+    "source_passage_id": "q1010_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1010_hi_p1",
+      "language": "hi",
+      "query_context": "वयस्क मानव शरीर में कितनी हड्डियाँ होती हैं",
+      "url": "",
+      "original_length": 100,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 100
+  },
+  {
+    "chunk_id": "55a91df07155b759",
+    "text": "The boiling point of water is the temperature at which the vapor pressure of the liquid equals the pressure surrounding the liquid. At standard atmospheric pressure at sea level (1 atmosphere or 101.325 kPa), pure water boils at 100 degrees Celsius (212 degrees Fahrenheit, or 373.15 Kelvin). At higher altitudes where atmospheric pressure is lower, water boils at lower temperatures.",
+    "source_passage_id": "q1011_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1011_en_p0",
+      "language": "en",
+      "query_context": "what is the boiling point of water at sea level",
+      "url": "",
+      "original_length": 384,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 384
+  },
+  {
+    "chunk_id": "70ebecb36b20e515",
+    "text": "The freezing point of pure water at 1 atmosphere of pressure is 0 degrees Celsius (32 degrees Fahrenheit).",
+    "source_passage_id": "q1011_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1011_en_p1",
+      "language": "en",
+      "query_context": "what is the boiling point of water at sea level",
+      "url": "",
+      "original_length": 106,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 106
+  },
+  {
+    "chunk_id": "b23d90c01ffb9b48",
+    "text": "समुद्र तल पर मानक वायुमंडलीय दबाव (1 वायुमंडल) पर, शुद्ध पानी 100 डिग्री सेल्सियस (212 डिग्री फारेनहाइट) पर उबलता है। उच्च ऊंचाई पर जहां दबाव कम होता है, पानी कम तापमान पर उबलता है।",
+    "source_passage_id": "q1011_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1011_hi_p0",
+      "language": "hi",
+      "query_context": "समुद्र तल पर पानी का क्वथनांक क्या है",
+      "url": "",
+      "original_length": 181,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 181
+  },
+  {
+    "chunk_id": "918e83ddf7ce55dc",
+    "text": "1 वायुमंडलीय दबाव पर शुद्ध पानी का हिमांक 0 डिग्री सेल्सियस है।",
+    "source_passage_id": "q1011_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1011_hi_p1",
+      "language": "hi",
+      "query_context": "समुद्र तल पर पानी का क्वथनांक क्या है",
+      "url": "",
+      "original_length": 63,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 63
+  },
+  {
+    "chunk_id": "720fa99364ef397a",
+    "text": "Charles Babbage, an English mechanical engineer and polymath, originated the concept of a programmable computer. He invented the Difference Engine in 1822 and designed the Analytical Engine in 1837, which contained an Arithmetic Logic Unit, control flow with conditional branching, and integrated memory. Alan Turing later formalized the concepts of algorithm and computation with the Turing machine in 1936.",
+    "source_passage_id": "q1012_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1012_en_p0",
+      "language": "en",
+      "query_context": "who is known as the father of modern computers",
+      "url": "",
+      "original_length": 408,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 408
+  },
+  {
+    "chunk_id": "35e7b8b39196736b",
+    "text": "Ada Lovelace worked with Babbage and wrote the first algorithm intended to be processed by a machine, making her the world's first computer programmer.",
+    "source_passage_id": "q1012_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1012_en_p1",
+      "language": "en",
+      "query_context": "who is known as the father of modern computers",
+      "url": "",
+      "original_length": 151,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 151
+  },
+  {
+    "chunk_id": "e57df50db496663d",
+    "text": "चार्ल्स बैबेज ने एक प्रोग्राम करने योग्य कंप्यूटर की अवधारणा की शुरुआत की। उन्होंने 1837 में एनालिटिकल इंजन को डिजाइन किया। एलन ट्यूरिंग ने बाद में 1936 में ट्यूरिंग मशीन के साथ एल्गोरिदम की अवधारणाओं को औपचारिक रूप दिया।",
+    "source_passage_id": "q1012_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1012_hi_p0",
+      "language": "hi",
+      "query_context": "आधुनिक कंप्यूटर का जनक किसे कहा जाता है",
+      "url": "",
+      "original_length": 221,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 221
+  },
+  {
+    "chunk_id": "b033c48f4a71e48b",
+    "text": "एडा लवलेस ने बैबेज के साथ काम किया और दुनिया की पहली कंप्यूटर प्रोग्रामर बनीं।",
+    "source_passage_id": "q1012_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1012_hi_p1",
+      "language": "hi",
+      "query_context": "आधुनिक कंप्यूटर का जनक किसे कहा जाता है",
+      "url": "",
+      "original_length": 78,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 78
+  },
+  {
+    "chunk_id": "117a195624c3300a",
+    "text": "Condensation is the change of the physical state of matter from the gas phase into the liquid phase. It is the reverse of vaporization. Condensation is an essential part of the water cycle, occurring when water vapor in the air cools and condenses into liquid water droplets, forming clouds, fog, and dew.",
+    "source_passage_id": "q1013_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1013_en_p0",
+      "language": "en",
+      "query_context": "what is the process of condensation",
+      "url": "",
+      "original_length": 305,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 305
+  },
+  {
+    "chunk_id": "8d6534c7fe0e5de7",
+    "text": "Evaporation is the phase transition in which liquid turns into vapor below its boiling temperature.",
+    "source_passage_id": "q1013_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1013_en_p1",
+      "language": "en",
+      "query_context": "what is the process of condensation",
+      "url": "",
+      "original_length": 99,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 99
+  },
+  {
+    "chunk_id": "51b969247da5e06d",
+    "text": "संघनन गैस अवस्था से तरल अवस्था में पदार्थ की भौतिक स्थिति का परिवर्तन है। यह जल चक्र का एक अनिवार्य हिस्सा है, जो तब होता है जब हवा में जलवाष्प ठंडा होकर बादलों और ओस का निर्माण करता है।",
+    "source_passage_id": "q1013_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1013_hi_p0",
+      "language": "hi",
+      "query_context": "संघनन की प्रक्रिया क्या है",
+      "url": "",
+      "original_length": 186,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 186
+  },
+  {
+    "chunk_id": "6d6c66d55bfb0b9f",
+    "text": "वाष्पीकरण वह प्रक्रिया है जिसमें तरल अपने क्वथनांक से नीचे वाष्प में बदल जाता है।",
+    "source_passage_id": "q1013_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1013_hi_p1",
+      "language": "hi",
+      "query_context": "संघनन की प्रक्रिया क्या है",
+      "url": "",
+      "original_length": 81,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 81
+  },
+  {
+    "chunk_id": "7dec9998486b5438",
+    "text": "The Pacific Ocean is the largest and deepest of the world's five oceans. Extending from the Arctic Ocean in the north to the Southern Ocean in the south, it spans an area of approximately 165.25 million square kilometers (63.8 million square miles), covering about 46% of Earth's water surface and about 32% of its total surface area.",
+    "source_passage_id": "q1014_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1014_en_p0",
+      "language": "en",
+      "query_context": "which ocean is the largest on earth",
+      "url": "",
+      "original_length": 334,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 334
+  },
+  {
+    "chunk_id": "5b848d98c81a20fe",
+    "text": "The Atlantic Ocean is the second-largest ocean, covering approximately 20% of Earth's surface.",
+    "source_passage_id": "q1014_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1014_en_p1",
+      "language": "en",
+      "query_context": "which ocean is the largest on earth",
+      "url": "",
+      "original_length": 94,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 94
+  },
+  {
+    "chunk_id": "b14b9654080f6362",
+    "text": "प्रशांत महासागर दुनिया के पांच महासागरों में सबसे बड़ा और गहरा है। यह लगभग 165.25 मिलियन वर्ग किलोमीटर के क्षेत्र में फैला है, जो पृथ्वी की जल सतह का लगभग 46% हिस्सा कवर करता है।",
+    "source_passage_id": "q1014_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1014_hi_p0",
+      "language": "hi",
+      "query_context": "पृथ्वी पर सबसे बड़ा महासागर कौन सा है",
+      "url": "",
+      "original_length": 178,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 178
+  },
+  {
+    "chunk_id": "95f0cbcdb500aa34",
+    "text": "अटलांटिक महासागर दूसरा सबसे बड़ा महासागर है, जो पृथ्वी की सतह का लगभग 20% हिस्सा कवर करता है।",
+    "source_passage_id": "q1014_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1014_hi_p1",
+      "language": "hi",
+      "query_context": "पृथ्वी पर सबसे बड़ा महासागर कौन सा है",
+      "url": "",
+      "original_length": 93,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 93
+  },
+  {
+    "chunk_id": "d10af7be88b43bbe",
+    "text": "The Japanese Yen (symbol: ¥, code: JPY) is the official currency of Japan. It is the third most traded currency in the foreign exchange market after the United States Dollar and the Euro. The New Currency Act of 1871 officially introduced the decimal accounting system for the yen.",
+    "source_passage_id": "q1015_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1015_en_p0",
+      "language": "en",
+      "query_context": "what is the currency of Japan",
+      "url": "",
+      "original_length": 281,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 281
+  },
+  {
+    "chunk_id": "980ccbd1722039d0",
+    "text": "The Bank of Japan is the central bank responsible for issuing banknotes and implementing monetary policy.",
+    "source_passage_id": "q1015_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1015_en_p1",
+      "language": "en",
+      "query_context": "what is the currency of Japan",
+      "url": "",
+      "original_length": 105,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 105
+  },
+  {
+    "chunk_id": "735653283719ed96",
+    "text": "जापानी येन (चिह्न: ¥, कोड: JPY) जापान की आधिकारिक मुद्रा है। यह विदेशी मुद्रा बाजार में अमेरिकी डॉलर और यूरो के बाद तीसरी सबसे अधिक कारोबार वाली मुद्रा है।",
+    "source_passage_id": "q1015_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1015_hi_p0",
+      "language": "hi",
+      "query_context": "जापान की मुद्रा क्या है",
+      "url": "",
+      "original_length": 155,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 155
+  },
+  {
+    "chunk_id": "74727ca7579440fc",
+    "text": "बैंक ऑफ जापान बैंक नोट जारी करने के लिए जिम्मेदार केंद्रीय बैंक है।",
+    "source_passage_id": "q1015_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1015_hi_p1",
+      "language": "hi",
+      "query_context": "जापान की मुद्रा क्या है",
+      "url": "",
+      "original_length": 67,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 67
+  },
+  {
+    "chunk_id": "b0e3ccc098d8c3e2",
+    "text": "Acid rain, or acid deposition, is rain or any other form of precipitation that is unusually acidic, meaning that it has elevated levels of hydrogen ions (low pH). It is caused by emissions of sulfur dioxide (SO2) and nitrogen oxides (NOx), which react with water molecules in the atmosphere to produce sulfuric and nitric acids. Major sources include coal-fired power plants, factories, and automobiles.",
+    "source_passage_id": "q1016_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1016_en_p0",
+      "language": "en",
+      "query_context": "what causes acid rain",
+      "url": "",
+      "original_length": 403,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 403
+  },
+  {
+    "chunk_id": "12bb409155a3e842",
+    "text": "Acid rain causes damage to forests, freshwater bodies, soil microbiology, and historic stone buildings and monuments.",
+    "source_passage_id": "q1016_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1016_en_p1",
+      "language": "en",
+      "query_context": "what causes acid rain",
+      "url": "",
+      "original_length": 117,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 117
+  },
+  {
+    "chunk_id": "74b788e6c99df2d7",
+    "text": "अम्लीय वर्षा असामान्य रूप से अम्लीय वर्षा या वर्षा का कोई अन्य रूप है। यह सल्फर डाइऑक्साइड (SO2) और नाइट्रोजन ऑक्साइड (NOx) के उत्सर्जन के कारण होता है, जो वातावरण में पानी के अणुओं के साथ प्रतिक्रिया करके सल्फ्यूरिक और नाइट्रिक एसिड का उत्पादन करते हैं।",
+    "source_passage_id": "q1016_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1016_hi_p0",
+      "language": "hi",
+      "query_context": "अम्लीय वर्षा किसके कारण होती है",
+      "url": "",
+      "original_length": 254,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 254
+  },
+  {
+    "chunk_id": "e91f8ebf7a93b75c",
+    "text": "अम्लीय वर्षा वनों, ताजे पानी के स्रोतों और ऐतिहासिक स्मारकों को नुकसान पहुँचाती है।",
+    "source_passage_id": "q1016_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1016_hi_p1",
+      "language": "hi",
+      "query_context": "अम्लीय वर्षा किसके कारण होती है",
+      "url": "",
+      "original_length": 83,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 83
+  },
+  {
+    "chunk_id": "26e2f6e07750d7d9",
+    "text": "Marie Curie was a Polish and naturalized-French physicist and chemist who conducted pioneering research on radioactivity. She was the first woman to win a Nobel Prize (Physics in 1903, shared with Pierre Curie and Henri Becquerel), the first person to win two Nobel Prizes, and the only person to win Nobel Prizes in two different scientific fields (Physics 1903 and Chemistry 1911 for discovering radium and polonium).",
+    "source_passage_id": "q1017_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1017_en_p0",
+      "language": "en",
+      "query_context": "who was the first woman to win a Nobel Prize",
+      "url": "",
+      "original_length": 419,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 419
+  },
+  {
+    "chunk_id": "c34298619e47f539",
+    "text": "Her daughter Irene Joliot-Curie also won the Nobel Prize in Chemistry in 1935 for synthesis of new radioactive elements.",
+    "source_passage_id": "q1017_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1017_en_p1",
+      "language": "en",
+      "query_context": "who was the first woman to win a Nobel Prize",
+      "url": "",
+      "original_length": 120,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 120
+  },
+  {
+    "chunk_id": "071d1409577be7b1",
+    "text": "मैरी क्यूरी एक भौतिक विज्ञानी और रसायनज्ञ थीं जिन्होंने रेडियोधर्मिता पर अग्रणी शोध किया। वह नोबेल पुरस्कार जीतने वाली पहली महिला थीं (1903 में भौतिकी) और दो अलग-अलग वैज्ञानिक क्षेत्रों (भौतिकी और रसायन विज्ञान) में नोबेल पुरस्कार जीतने वाली एकमात्र व्यक्ति हैं।",
+    "source_passage_id": "q1017_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1017_hi_p0",
+      "language": "hi",
+      "query_context": "नोबेल पुरस्कार जीतने वाली पहली महिला कौन थीं",
+      "url": "",
+      "original_length": 262,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 262
+  },
+  {
+    "chunk_id": "372115e75e7d321a",
+    "text": "उनकी बेटी आइरीन जोलियट-क्यूरी ने भी 1935 में रसायन विज्ञान में नोबेल पुरस्कार जीता था।",
+    "source_passage_id": "q1017_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1017_hi_p1",
+      "language": "hi",
+      "query_context": "नोबेल पुरस्कार जीतने वाली पहली महिला कौन थीं",
+      "url": "",
+      "original_length": 86,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 86
+  },
+  {
+    "chunk_id": "ce716f6c68f92c1b",
+    "text": "Red blood cells (erythrocytes) are the most common type of blood cell in vertebrates. Their primary physiological function is to carry oxygen from the lungs or gills to body tissues and deliver carbon dioxide waste from tissues back to the respiratory organs. This is accomplished using hemoglobin, an iron-rich protein that binds oxygen reversibly.",
+    "source_passage_id": "q1018_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1018_en_p0",
+      "language": "en",
+      "query_context": "what is the primary function of red blood cells",
+      "url": "",
+      "original_length": 349,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 349
+  },
+  {
+    "chunk_id": "bbacc57f0e8136cf",
+    "text": "White blood cells (leukocytes) are part of the immune system and defend the body against infectious diseases and foreign invaders.",
+    "source_passage_id": "q1018_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1018_en_p1",
+      "language": "en",
+      "query_context": "what is the primary function of red blood cells",
+      "url": "",
+      "original_length": 130,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 130
+  },
+  {
+    "chunk_id": "d3fb90116619181b",
+    "text": "लाल रक्त कोशिकाएं (एरिथ्रोसाइट्स) कशेरुकियों में सबसे आम प्रकार की रक्त कोशिकाएं हैं। उनका प्राथमिक कार्य फेफड़ों से शरीर के ऊतकों तक ऑक्सीजन ले जाना और कार्बन डाइऑक्साइड अपशिष्ट को वापस फेफड़ों तक पहुंचाना है। यह हीमोग्लोबिन के माध्यम से किया जाता है।",
+    "source_passage_id": "q1018_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1018_hi_p0",
+      "language": "hi",
+      "query_context": "लाल रक्त कोशिकाओं का प्राथमिक कार्य क्या है",
+      "url": "",
+      "original_length": 252,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 252
+  },
+  {
+    "chunk_id": "1fa42bc3c9541fe1",
+    "text": "श्वेत रक्त कोशिकाएं प्रतिरक्षा प्रणाली का हिस्सा हैं और शरीर को संक्रमण से बचाती हैं।",
+    "source_passage_id": "q1018_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1018_hi_p1",
+      "language": "hi",
+      "query_context": "लाल रक्त कोशिकाओं का प्राथमिक कार्य क्या है",
+      "url": "",
+      "original_length": 85,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 85
+  },
+  {
+    "chunk_id": "c96ccc1cdf94ea25",
+    "text": "Renewable energy is energy derived from natural resources that replenish themselves naturally on a human timescale, without depleting Earth's resources. Major examples include solar power (photovoltaic and solar thermal), wind power, hydroelectric energy, geothermal energy, ocean tidal/wave energy, and biomass. Renewable energy produces far fewer greenhouse gas emissions compared to burning fossil fuels.",
+    "source_passage_id": "q1019_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1019_en_p0",
+      "language": "en",
+      "query_context": "what is renewable energy and give examples",
+      "url": "",
+      "original_length": 407,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 407
+  },
+  {
+    "chunk_id": "7e44ccbfd2827c4a",
+    "text": "Fossil fuels such as coal, petroleum, and natural gas are non-renewable because they take millions of years to form.",
+    "source_passage_id": "q1019_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1019_en_p1",
+      "language": "en",
+      "query_context": "what is renewable energy and give examples",
+      "url": "",
+      "original_length": 116,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 116
+  },
+  {
+    "chunk_id": "06fde3f0e9d5d1cb",
+    "text": "नवीकरणीय ऊर्जा वह ऊर्जा है जो प्राकृतिक संसाधनों से प्राप्त होती है जो मानव समय के पैमाने पर स्वाभाविक रूप से नवीनीकृत होती है। प्रमुख उदाहरणों में सौर ऊर्जा, पवन ऊर्जा, जलविद्युत, भू-तापीय ऊर्जा और बायोमास शामिल हैं।",
+    "source_passage_id": "q1019_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1019_hi_p0",
+      "language": "hi",
+      "query_context": "नवीकरणीय ऊर्जा क्या है और इसके उदाहरण दें",
+      "url": "",
+      "original_length": 217,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 217
+  },
+  {
+    "chunk_id": "92be1c16ae095c87",
+    "text": "कोयला, पेट्रोलियम और प्राकृतिक गैस जैसे जीवाश्म ईंधन गैर-नवीकरणीय हैं।",
+    "source_passage_id": "q1019_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1019_hi_p1",
+      "language": "hi",
+      "query_context": "नवीकरणीय ऊर्जा क्या है और इसके उदाहरण दें",
+      "url": "",
+      "original_length": 70,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 70
+  },
+  {
+    "chunk_id": "1896da90ce5fc4e3",
+    "text": "The ozone layer or ozone shield is a region of Earth's stratosphere that contains a high concentration of ozone (O3) molecules. It absorbs 97 to 99 percent of the Sun's medium-frequency ultraviolet light (from about 200 nm to 315 nm wavelength), which otherwise has the potential to damage exposed life forms near Earth's surface and cause skin cancer and cataracts in humans.",
+    "source_passage_id": "q1020_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1020_en_p0",
+      "language": "en",
+      "query_context": "what is the function of the ozone layer",
+      "url": "",
+      "original_length": 376,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 376
+  },
+  {
+    "chunk_id": "6cc0e50015ba183c",
+    "text": "The Montreal Protocol was signed in 1987 to phase out chlorofluorocarbons (CFCs) that were depleting the ozone layer.",
+    "source_passage_id": "q1020_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1020_en_p1",
+      "language": "en",
+      "query_context": "what is the function of the ozone layer",
+      "url": "",
+      "original_length": 117,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 117
+  },
+  {
+    "chunk_id": "9c4efb342edf0a0a",
+    "text": "ओजोन परत पृथ्वी के समताप मंडल का एक क्षेत्र है जो सूर्य के मध्यम आवृत्ति के पराबैंगनी प्रकाश के 97 से 99 प्रतिशत हिस्से को अवशोषित करता है, जो पृथ्वी की सतह पर जीवन को नुकसान पहुंचा सकता है।",
+    "source_passage_id": "q1020_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1020_hi_p0",
+      "language": "hi",
+      "query_context": "ओजोन परत का क्या कार्य है",
+      "url": "",
+      "original_length": 190,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 190
+  },
+  {
+    "chunk_id": "a754b0ed8b5b29c6",
+    "text": "ओजोन परत को नष्ट करने वाले सीएफसी को समाप्त करने के लिए 1987 में मॉन्ट्रियल प्रोटोकॉल पर हस्ताक्षर किए गए थे।",
+    "source_passage_id": "q1020_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1020_hi_p1",
+      "language": "hi",
+      "query_context": "ओजोन परत का क्या कार्य है",
+      "url": "",
+      "original_length": 109,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 109
   }
 ]

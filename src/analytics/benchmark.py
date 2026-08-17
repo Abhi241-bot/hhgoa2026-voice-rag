@@ -241,19 +241,47 @@ if __name__ == "__main__":
     from src.harness.pipeline import PipelineHarness
     from src.retrieval.retriever import HybridRetriever
 
-    print(f"Loading {args.queries} test queries from MSMARCO-XI...")
-    test_queries = []
-    for record in load_dataset_streaming(max_records=args.queries + 20):
-        q = record.get("query") or record.get("question")
-        if q:
-            test_queries.append(q)
-        if len(test_queries) >= args.queries:
-            break
+    print(f"Loading test queries from MSMARCO-XI dataset...")
+    raw_queries: list[str] = []
+    for record in load_dataset_streaming(max_records=100):
+        eng = record.get("Eng_Query") or record.get("question")
+        trans = record.get("query")
+        if eng:
+            raw_queries.append(eng)
+        if trans and trans != eng:
+            raw_queries.append(trans)
 
-    print(f"Collected {len(test_queries)} queries. Initializing pipeline...")
+    if not raw_queries:
+        raw_queries = [
+            "What is the capital of France?",
+            "Who invented the telephone?",
+            "How does photosynthesis work?",
+            "What are the symptoms of diabetes?",
+            "What is the speed of light in vacuum?",
+            "What causes ocean tides?",
+            "Who wrote the Indian national anthem?",
+            "What is machine learning?",
+        ]
+
+    # Expand to requested count if needed
+    test_queries: list[str] = []
+    while len(test_queries) < args.queries:
+        for q in raw_queries:
+            test_queries.append(q)
+            if len(test_queries) >= args.queries:
+                break
+
+    print(f"Prepared {len(test_queries)} test queries. Initializing pipeline...")
     retriever = HybridRetriever()
     pipeline = PipelineHarness(retriever=retriever)
 
-    print("Running benchmark...")
+    # Warm-up call
+    print("Warming up pipeline components...")
+    try:
+        pipeline.run("What is the capital of France?")
+    except Exception as e:
+        print(f"Warmup notice: {e}")
+
+    print(f"Running benchmark across {len(test_queries)} queries...")
     df = run_benchmark(pipeline, test_queries, args.output_dir)
     print(f"\n✅ Benchmark complete — {len(df)} queries processed")
