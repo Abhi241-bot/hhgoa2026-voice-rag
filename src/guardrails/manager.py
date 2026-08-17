@@ -45,7 +45,8 @@ class SafetyGuardrail:
     """
 
     def __init__(self, use_openai_moderation: bool = True) -> None:
-        self.use_openai = use_openai_moderation and bool(settings.openai_api_key)
+        key = settings.openai_api_key.strip() if settings.openai_api_key else ""
+        self.use_openai = use_openai_moderation and bool(key) and not key.startswith("your_")
 
     def check(self, text: str) -> GuardrailResult:
         start = time.perf_counter()
@@ -308,7 +309,7 @@ class FaithfulnessGuardrail:
 
         client = Groq(api_key=settings.groq_api_key)
         completion = client.chat.completions.create(
-            model="llama-3.1-8b-instant",
+            model=settings.llm_model,
             messages=[{"role": "user", "content": prompt}],
             max_tokens=5,
             temperature=0.0,

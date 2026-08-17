@@ -35,7 +35,7 @@ class Settings(BaseSettings):
     )
 
     # ── LLM ──────────────────────────────────────────────────────────────
-    llm_model: str = Field(default="llama-3.1-8b-instant", description="Groq model name")
+    llm_model: str = Field(default="openai/gpt-oss-20b", description="Groq model name")
     llm_max_tokens: int = Field(default=512, description="Max tokens for LLM response")
     llm_temperature: float = Field(default=0.1, description="LLM temperature (low = factual)")
 
