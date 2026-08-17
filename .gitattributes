@@ -1,0 +1,10 @@
+# Handle line endings consistently across platforms
+* text=auto eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.wav binary
+*.mp3 binary
+*.pkl binary
+*.faiss binary
