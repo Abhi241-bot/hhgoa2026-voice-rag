@@ -1,0 +1,156 @@
+[
+  {
+    "query_id": 1001,
+    "Eng_Query": "what is the capital of france",
+    "query": "फ्रांस की राजधानी क्या है",
+    "target_lang": "hi",
+    "Eng_Answer": "Paris is the capital and most populous city of France.",
+    "Answer": "पेरिस फ्रांस की राजधानी और सबसे अधिक आबादी वाला शहर है।",
+    "passages": {
+      "is_selected": [1, 0, 0],
+      "English_passages": [
+        "Paris is the capital and most populous city of France. With an estimated population of 2,165,423 residents in 2019, Paris has been one of the world's major centres of finance, diplomacy, commerce, fashion, gastronomy, science, and arts since the 17th century.",
+        "France is a country located primarily in Western Europe. It is bordered by Belgium, Luxembourg, Germany, Switzerland, Italy, Monaco, Spain, and Andorra.",
+        "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower."
+      ],
+      "Translated_passages": [
+        "पेरिस फ्रांस की राजधानी और सबसे अधिक आबादी वाला शहर है। 2019 में अनुमानित 2,165,423 निवासियों की आबादी के साथ, पेरिस 17 वीं शताब्दी से वित्त, कूटनीति, वाणिज्य, फैशन, पाक कला, विज्ञान और कला का एक प्रमुख केंद्र रहा है।",
+        "फ्रांस मुख्य रूप से पश्चिमी यूरोप में स्थित एक देश है। यह बेल्जियम, लक्ज़मबर्ग, जर्मनी, स्विट्जरलैंड, इटली, मोनाको, स्पेन और अंडोरा से घिरा हुआ है।",
+        "एफिल टॉवर पेरिस, फ्रांस में चैंप डी मार्स पर एक लोहे का जालीदार टॉवर है। इसका नाम इंजीनियर गुस्ताव एफिल के नाम पर रखा गया है, जिनकी कंपनी ने टॉवर का डिजाइन और निर्माण किया था।"
+      ]
+    }
+  },
+  {
+    "query_id": 1002,
+    "Eng_Query": "who invented the telephone",
+    "query": "टेलीफोन का आविष्कार किसने किया था",
+    "target_lang": "hi",
+    "Eng_Answer": "Alexander Graham Bell was awarded the first U.S. patent for the telephone in 1876.",
+    "Answer": "अलेक्जेंडर ग्राहम बेल को 1876 में टेलीफोन के लिए पहला अमेरिकी पेटेंट प्रदान किया गया था।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "Alexander Graham Bell was a Scottish-born inventor, scientist, and engineer who is credited with patenting the first practical telephone. On March 7, 1876, Bell was awarded U.S. Patent 174,465 for an 'Improvement in Telegraphy', which covered the method of and apparatus for transmitting vocal or other sounds telegraphically.",
+        "Antonio Meucci and Elisha Gray also developed early acoustic and electric speech transmitting devices, sparking long-running patent disputes in the late 19th century."
+      ],
+      "Translated_passages": [
+        "अलेक्जेंडर ग्राहम बेल एक स्कॉटिश मूल के आविष्कारक, वैज्ञानिक और इंजीनियर थे, जिन्हें पहले व्यावहारिक टेलीफोन का पेटेंट कराने का श्रेय दिया जाता है। 7 मार्च, 1876 को, बेल को टेलीग्राफी में सुधार के लिए अमेरिकी पेटेंट 174,465 से सम्मानित किया गया था।",
+        "एंटोनियो मेउची और एलिशा ग्रे ने भी शुरुआती भाषण संचार उपकरणों का विकास किया था, जिससे 19वीं सदी के अंत में पेटेंट विवाद उत्पन्न हुए थे।"
+      ]
+    }
+  },
+  {
+    "query_id": 1003,
+    "Eng_Query": "how does photosynthesis work in plants",
+    "query": "पौधों में प्रकाश संश्लेषण कैसे काम करता है",
+    "target_lang": "hi",
+    "Eng_Answer": "Photosynthesis converts light energy into chemical energy using chlorophyll, water, and carbon dioxide.",
+    "Answer": "प्रकाश संश्लेषण क्लोरोफिल, पानी और कार्बन डाइऑक्साइड का उपयोग करके प्रकाश ऊर्जा को रासायनिक ऊर्जा में परिवर्तित करता है।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "Photosynthesis is a biological process used by plants, algae, and certain bacteria to convert light energy into chemical energy. During this process, chlorophyll within plant chloroplasts absorbs sunlight, which drives a reaction combining water and carbon dioxide to produce glucose (sugar) and oxygen as a byproduct. The chemical equation is 6CO2 + 6H2O + light -> C6H12O6 + 6O2.",
+        "Plant respiration is the opposite process where cells consume oxygen and glucose to release energy, carbon dioxide, and water."
+      ],
+      "Translated_passages": [
+        "प्रकाश संश्लेषण पौधों, शैवाल और कुछ जीवाणुओं द्वारा प्रकाश ऊर्जा को रासायनिक ऊर्जा में बदलने के लिए उपयोग की जाने वाली एक जैविक प्रक्रिया है। इस प्रक्रिया के दौरान, पौधे के क्लोरोप्लास्ट में क्लोरोफिल सूर्य के प्रकाश को अवशोषित करता है, जो ग्लूकोज और ऑक्सीजन का उत्पादन करने के लिए पानी और कार्बन डाइऑक्साइड को जोड़ता है।",
+        "पौधों का श्वसन विपरीत प्रक्रिया है जहां कोशिकाएं ऊर्जा, कार्बन डाइऑक्साइड और पानी छोड़ने के लिए ऑक्सीजन और ग्लूकोज का उपभोग करती हैं।"
+      ]
+    }
+  },
+  {
+    "query_id": 1004,
+    "Eng_Query": "what are the main symptoms of type 2 diabetes",
+    "query": "टाइप 2 मधुमेह के मुख्य लक्षण क्या हैं",
+    "target_lang": "hi",
+    "Eng_Answer": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, fatigue, blurry vision, and unexplained weight loss.",
+    "Answer": "टाइप 2 मधुमेह के सामान्य लक्षणों में अत्यधिक प्यास, बार-बार पेशाब आना, थकान, धुंधली दृष्टि और अवांछित वजन कम होना शामिल हैं।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "Common symptoms of type 2 diabetes include excessive thirst (polydipsia), frequent urination (polyuria), increased hunger, extreme fatigue, blurry vision, slow-healing sores, tingling or numbness in hands or feet, and unexplained weight loss. In many cases, symptoms develop slowly over years.",
+        "Type 2 diabetes is primarily managed through lifestyle changes such as diet modification, regular aerobic exercise, and medication such as metformin or insulin therapy when necessary."
+      ],
+      "Translated_passages": [
+        "टाइप 2 मधुमेह के सामान्य लक्षणों में अत्यधिक प्यास लगना, बार-बार पेशाब आना, भूख में वृद्धि, अत्यधिक थकान, धुंधली दृष्टि, घावों का धीरे-धीरे भरना और बिना किसी कारण के वजन कम होना शामिल है।",
+        "टाइप 2 मधुमेह का प्रबंधन मुख्य रूप से जीवनशैली में बदलाव जैसे आहार संशोधन, नियमित व्यायाम और दवाओं के माध्यम से किया जाता है।"
+      ]
+    }
+  },
+  {
+    "query_id": 1005,
+    "Eng_Query": "what is the speed of light in vacuum",
+    "query": "निर्वात में प्रकाश की गति क्या है",
+    "target_lang": "hi",
+    "Eng_Answer": "The speed of light in a vacuum is exactly 299,792,458 metres per second (approximately 300,000 km/s).",
+    "Answer": "निर्वात में प्रकाश की गति ठीक 299,792,458 मीटर प्रति सेकंड (लगभग 300,000 किमी/सेकंड) है।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "The speed of light in vacuum, commonly denoted c, is a universal physical constant exactly equal to 299,792,458 metres per second (approximately 300,000 kilometres per second, or 186,282 miles per second). According to special relativity, c is the upper speed limit for all matter and information in the universe.",
+        "Light travels slower in mediums like water (225,000 km/s) and glass (200,000 km/s) due to the refractive index of those materials."
+      ],
+      "Translated_passages": [
+        "निर्वात में प्रकाश की गति, जिसे आमतौर पर c द्वारा दर्शाया जाता है, एक सार्वभौमिक भौतिक स्थिरांक है जो ठीक 299,792,458 मीटर प्रति सेकंड (लगभग 300,000 किमी प्रति सेकंड) के बराबर है। विशेष सापेक्षता के अनुसार, c ब्रह्मांड में सभी पदार्थ और जानकारी के लिए अधिकतम गति सीमा है।",
+        "अपवर्तक सूचकांक के कारण पानी (225,000 किमी/सेकंड) और कांच (200,000 किमी/सेकंड) जैसे माध्यमों में प्रकाश धीमी गति से यात्रा करता है।"
+      ]
+    }
+  },
+  {
+    "query_id": 1006,
+    "Eng_Query": "what causes tides on earth",
+    "query": "पृथ्वी पर ज्वार-भाटा किसके कारण आता है",
+    "target_lang": "hi",
+    "Eng_Answer": "Ocean tides are caused primarily by the gravitational pull of the Moon and the Sun on Earth's oceans.",
+    "Answer": "समुद्र में ज्वार-भाटा मुख्य रूप से पृथ्वी के महासागरों पर चंद्रमा और सूर्य के गुरुत्वाकर्षण खिंचाव के कारण होता है।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "Ocean tides are the rise and fall of sea levels caused by the combined effects of the gravitational forces exerted by the Moon and the Sun, and the rotation of the Earth. The gravitational attraction between the Earth and the Moon creates tidal bulges on both sides of the Earth, leading to high and low tides roughly every 12 hours and 25 minutes.",
+        "Spring tides occur during full and new moons when the Sun, Moon, and Earth align, creating the largest tidal ranges."
+      ],
+      "Translated_passages": [
+        "समुद्री ज्वार चंद्रमा और सूर्य द्वारा लगाए गए गुरुत्वाकर्षण बलों और पृथ्वी के घूमने के संयुक्त प्रभाव के कारण समुद्र के स्तर में उतार-चढ़ाव हैं। पृथ्वी और चंद्रमा के बीच गुरुत्वाकर्षण खिंचाव पृथ्वी के दोनों किनारों पर ज्वार का उभार बनाता है।",
+        "सूर्य, चंद्रमा और पृथ्वी के संरेखित होने पर पूर्णिमा और अमावस्या के दौरान बड़े ज्वार आते हैं।"
+      ]
+    }
+  },
+  {
+    "query_id": 1007,
+    "Eng_Query": "who wrote the Indian national anthem",
+    "query": "भारत का राष्ट्रगान किसने लिखा था",
+    "target_lang": "hi",
+    "Eng_Answer": "Rabindranath Tagore composed Jana Gana Mana, the national anthem of India.",
+    "Answer": "रवींद्रनाथ टैगोर ने भारत का राष्ट्रगान 'जन गण मन' लिखा था।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "Jana Gana Mana is the national anthem of India. It was originally composed as Bharoto Bhagyo Bidhata in Bengali by polymath Rabindranath Tagore on 11 December 1911. The first stanza of the song was adopted by the Constituent Assembly of India as the National Anthem on 24 January 1950. A formal rendition takes 52 seconds.",
+        "Vande Mataram, composed in Sanskrit by Bankim Chandra Chatterjee, was designated as India's National Song."
+      ],
+      "Translated_passages": [
+        "जन गण मन भारत का राष्ट्रगान है। यह मूल रूप से 11 दिसंबर 1911 को रवींद्रनाथ टैगोर द्वारा बंगाली में 'भारतो भाग्यो बिधाता' के रूप में रचा गया था। इस गीत के पहले पद को 24 जनवरी 1950 को भारत की संविधान सभा द्वारा राष्ट्रगान के रूप में अपनाया गया था।",
+        "बंकिम चंद्र चटर्जी द्वारा संस्कृत में रचित 'वंदे मातरम' को भारत का राष्ट्रीय गीत नामित किया गया था।"
+      ]
+    }
+  },
+  {
+    "query_id": 1008,
+    "Eng_Query": "what is machine learning and how is it used",
+    "query": "मशीन लर्निंग क्या है और इसका उपयोग कैसे किया जाता है",
+    "target_lang": "hi",
+    "Eng_Answer": "Machine learning is a subset of AI where computer algorithms learn patterns from data without being explicitly programmed.",
+    "Answer": "मशीन लर्निंग एआई का एक उपसमूह है जहां कंप्यूटर एल्गोरिदम स्पष्ट रूप से प्रोग्राम किए बिना डेटा से पैटर्न सीखते हैं।",
+    "passages": {
+      "is_selected": [1, 0],
+      "English_passages": [
+        "Machine learning (ML) is a branch of artificial intelligence (AI) focused on building applications that learn from data and improve their accuracy over time without being explicitly programmed. Common paradigms include supervised learning, unsupervised learning, and reinforcement learning. Applications range from computer vision and speech recognition to autonomous driving and medical diagnosis.",
+        "Deep learning is a subset of machine learning based on artificial neural networks with multiple layers, mimicking the human brain's information processing."
+      ],
+      "Translated_passages": [
+        "मशीन लर्निंग (एमएल) कृत्रिम बुद्धिमत्ता (एआई) की एक शाखा है जो ऐसे अनुप्रयोगों के निर्माण पर केंद्रित है जो डेटा से सीखते हैं और समय के साथ अपनी सटीकता में सुधार करते हैं। इसके अनुप्रयोगों में कंप्यूटर विज़न, भाषण पहचान, स्वायत्त ड्राइविंग और चिकित्सा निदान शामिल हैं।",
+        "डीप लर्निंग मानव मस्तिष्क के सूचना प्रसंस्करण की नकल करते हुए कई परतों वाले कृत्रिम तंत्रिका नेटवर्क पर आधारित मशीन लर्निंग का एक उपसमूह है।"
+      ]
+    }
+  }
+]

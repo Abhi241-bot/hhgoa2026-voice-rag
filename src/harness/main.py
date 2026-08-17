@@ -10,6 +10,10 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
+
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 from src.logger import get_logger
 from src.models import TextQuery

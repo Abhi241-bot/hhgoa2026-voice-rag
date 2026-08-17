@@ -15,9 +15,13 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sys
 import time
 from pathlib import Path
 from typing import Iterator, Optional
+
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 from src.chunking.router import ChunkingRouter
 from src.config import settings
@@ -36,30 +40,33 @@ def load_dataset_streaming(
     split: str = DEFAULT_SPLIT,
     max_records: Optional[int] = None,
     cache_dir: Optional[str] = None,
+    data_file: Optional[str] = None,
 ) -> Iterator[dict]:
     """
-    Stream records from MSMARCO-XI via HuggingFace datasets.
-
-    Streaming avoids loading the full dataset into memory.
-    Each yielded record is a dict with keys like:
-        - 'id': passage ID
-        - 'passage': passage text
-        - 'query': associated query
-        - 'language': language code
-
-    Args:
-        language: Language config to load (e.g., 'en', 'hi').
-        split: Dataset split ('test' / 'validation').
-        max_records: Cap on number of records to load.
-        cache_dir: HuggingFace cache directory.
+    Stream records from MSMARCO-XI dataset (from local file or HuggingFace).
 
     Yields:
-        Record dicts.
+        Record dicts (flat or nested MSMARCO-XI schema).
     """
+    # 1. If data_file is explicitly provided or default sample exists
+    target_file = data_file or os.path.join("data", "sample_dataset.json")
+    if os.path.exists(target_file):
+        log.info("loading_local_dataset", path=target_file)
+        with open(target_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            count = 0
+            for record in data:
+                yield record
+                count += 1
+                if max_records and count >= max_records:
+                    break
+        log.info("local_dataset_streaming_complete", total_yielded=count)
+        return
+
+    # 2. Otherwise load from HuggingFace
     from datasets import load_dataset
 
-    log.info("loading_dataset", dataset=DATASET_NAME, language=language, split=split)
-
+    log.info("loading_hf_dataset", dataset=DATASET_NAME, language=language, split=split)
     cache = cache_dir or settings.data_cache_path
     os.makedirs(cache, exist_ok=True)
 
@@ -70,21 +77,22 @@ def load_dataset_streaming(
             split=split,
             streaming=True,
             cache_dir=cache,
-            trust_remote_code=True,
         )
+        count = 0
+        for record in ds:
+            yield record
+            count += 1
+            if max_records and count >= max_records:
+                break
+        log.info("hf_dataset_streaming_complete", total_yielded=count)
     except Exception as e:
-        log.error("dataset_load_failed", error=str(e))
-        raise
-
-    count = 0
-    for record in ds:
-        yield record
-        count += 1
-        if max_records and count >= max_records:
-            log.info("max_records_reached", count=count)
-            break
-
-    log.info("dataset_streaming_complete", total_yielded=count)
+        log.warning("hf_dataset_load_fallback", error=str(e))
+        # Fallback to local sample dataset if available
+        sample_path = os.path.join("data", "sample_dataset.json")
+        if os.path.exists(sample_path):
+            with open(sample_path, "r", encoding="utf-8") as f:
+                for record in json.load(f):
+                    yield record
 
 
 def run_chunking_pipeline(

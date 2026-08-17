@@ -13,9 +13,13 @@ Outputs:
 from __future__ import annotations
 
 import os
+import sys
 import time
 from pathlib import Path
 from typing import Optional
+
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 import numpy as np
 import pandas as pd

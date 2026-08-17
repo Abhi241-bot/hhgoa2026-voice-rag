@@ -1,0 +1,580 @@
+[
+  {
+    "chunk_id": "4bbb041f6d59b7ea",
+    "text": "Paris is the capital and most populous city of France. With an estimated population of 2,165,423 residents in 2019, Paris has been one of the world's major centres of finance, diplomacy, commerce, fashion, gastronomy, science, and arts since the 17th century.",
+    "source_passage_id": "q1001_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1001_en_p0",
+      "language": "en",
+      "query_context": "what is the capital of france",
+      "url": "",
+      "original_length": 259,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 259
+  },
+  {
+    "chunk_id": "5dccd315d7ed0cb3",
+    "text": "France is a country located primarily in Western Europe. It is bordered by Belgium, Luxembourg, Germany, Switzerland, Italy, Monaco, Spain, and Andorra.",
+    "source_passage_id": "q1001_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1001_en_p1",
+      "language": "en",
+      "query_context": "what is the capital of france",
+      "url": "",
+      "original_length": 152,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 152
+  },
+  {
+    "chunk_id": "059e098a14689746",
+    "text": "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower.",
+    "source_passage_id": "q1001_en_p2",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1001_en_p2",
+      "language": "en",
+      "query_context": "what is the capital of france",
+      "url": "",
+      "original_length": 178,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 178
+  },
+  {
+    "chunk_id": "9eebc88a45d8632f",
+    "text": "पेरिस फ्रांस की राजधानी और सबसे अधिक आबादी वाला शहर है। 2019 में अनुमानित 2,165,423 निवासियों की आबादी के साथ, पेरिस 17 वीं शताब्दी से वित्त, कूटनीति, वाणिज्य, फैशन, पाक कला, विज्ञान और कला का एक प्रमुख केंद्र रहा है।",
+    "source_passage_id": "q1001_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1001_hi_p0",
+      "language": "hi",
+      "query_context": "फ्रांस की राजधानी क्या है",
+      "url": "",
+      "original_length": 217,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 217
+  },
+  {
+    "chunk_id": "85773c965af2db95",
+    "text": "फ्रांस मुख्य रूप से पश्चिमी यूरोप में स्थित एक देश है। यह बेल्जियम, लक्ज़मबर्ग, जर्मनी, स्विट्जरलैंड, इटली, मोनाको, स्पेन और अंडोरा से घिरा हुआ है।",
+    "source_passage_id": "q1001_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1001_hi_p1",
+      "language": "hi",
+      "query_context": "फ्रांस की राजधानी क्या है",
+      "url": "",
+      "original_length": 147,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 147
+  },
+  {
+    "chunk_id": "89de88eb341f45d4",
+    "text": "एफिल टॉवर पेरिस, फ्रांस में चैंप डी मार्स पर एक लोहे का जालीदार टॉवर है। इसका नाम इंजीनियर गुस्ताव एफिल के नाम पर रखा गया है, जिनकी कंपनी ने टॉवर का डिजाइन और निर्माण किया था।",
+    "source_passage_id": "q1001_hi_p2",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1001_hi_p2",
+      "language": "hi",
+      "query_context": "फ्रांस की राजधानी क्या है",
+      "url": "",
+      "original_length": 175,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 175
+  },
+  {
+    "chunk_id": "39a6614607e55f95",
+    "text": "Alexander Graham Bell was a Scottish-born inventor, scientist, and engineer who is credited with patenting the first practical telephone. On March 7, 1876, Bell was awarded U.S. Patent 174,465 for an 'Improvement in Telegraphy', which covered the method of and apparatus for transmitting vocal or other sounds telegraphically.",
+    "source_passage_id": "q1002_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1002_en_p0",
+      "language": "en",
+      "query_context": "who invented the telephone",
+      "url": "",
+      "original_length": 326,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 326
+  },
+  {
+    "chunk_id": "3ae5d6bd31376784",
+    "text": "Antonio Meucci and Elisha Gray also developed early acoustic and electric speech transmitting devices, sparking long-running patent disputes in the late 19th century.",
+    "source_passage_id": "q1002_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1002_en_p1",
+      "language": "en",
+      "query_context": "who invented the telephone",
+      "url": "",
+      "original_length": 166,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 166
+  },
+  {
+    "chunk_id": "cc5fc20858b0a664",
+    "text": "अलेक्जेंडर ग्राहम बेल एक स्कॉटिश मूल के आविष्कारक, वैज्ञानिक और इंजीनियर थे, जिन्हें पहले व्यावहारिक टेलीफोन का पेटेंट कराने का श्रेय दिया जाता है। 7 मार्च, 1876 को, बेल को टेलीग्राफी में सुधार के लिए अमेरिकी पेटेंट 174,465 से सम्मानित किया गया था।",
+    "source_passage_id": "q1002_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1002_hi_p0",
+      "language": "hi",
+      "query_context": "टेलीफोन का आविष्कार किसने किया था",
+      "url": "",
+      "original_length": 248,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 248
+  },
+  {
+    "chunk_id": "6b4d1070b4ca8e53",
+    "text": "एंटोनियो मेउची और एलिशा ग्रे ने भी शुरुआती भाषण संचार उपकरणों का विकास किया था, जिससे 19वीं सदी के अंत में पेटेंट विवाद उत्पन्न हुए थे।",
+    "source_passage_id": "q1002_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1002_hi_p1",
+      "language": "hi",
+      "query_context": "टेलीफोन का आविष्कार किसने किया था",
+      "url": "",
+      "original_length": 135,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 135
+  },
+  {
+    "chunk_id": "df73eec837d417d5",
+    "text": "Photosynthesis is a biological process used by plants, algae, and certain bacteria to convert light energy into chemical energy. During this process, chlorophyll within plant chloroplasts absorbs sunlight, which drives a reaction combining water and carbon dioxide to produce glucose (sugar) and oxygen as a byproduct. The chemical equation is 6CO2 + 6H2O + light -> C6H12O6 + 6O2.",
+    "source_passage_id": "q1003_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1003_en_p0",
+      "language": "en",
+      "query_context": "how does photosynthesis work in plants",
+      "url": "",
+      "original_length": 381,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 381
+  },
+  {
+    "chunk_id": "19c529a4b51b4946",
+    "text": "Plant respiration is the opposite process where cells consume oxygen and glucose to release energy, carbon dioxide, and water.",
+    "source_passage_id": "q1003_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1003_en_p1",
+      "language": "en",
+      "query_context": "how does photosynthesis work in plants",
+      "url": "",
+      "original_length": 126,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 126
+  },
+  {
+    "chunk_id": "1636e5c8e0faf0c1",
+    "text": "प्रकाश संश्लेषण पौधों, शैवाल और कुछ जीवाणुओं द्वारा प्रकाश ऊर्जा को रासायनिक ऊर्जा में बदलने के लिए उपयोग की जाने वाली एक जैविक प्रक्रिया है। इस प्रक्रिया के दौरान, पौधे के क्लोरोप्लास्ट में क्लोरोफिल सूर्य के प्रकाश को अवशोषित करता है, जो ग्लूकोज और ऑक्सीजन का उत्पादन करने के लिए पानी और कार्बन डाइऑक्साइड को जोड़ता है।",
+    "source_passage_id": "q1003_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1003_hi_p0",
+      "language": "hi",
+      "query_context": "पौधों में प्रकाश संश्लेषण कैसे काम करता है",
+      "url": "",
+      "original_length": 321,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 321
+  },
+  {
+    "chunk_id": "ba1fa8746a86b09f",
+    "text": "पौधों का श्वसन विपरीत प्रक्रिया है जहां कोशिकाएं ऊर्जा, कार्बन डाइऑक्साइड और पानी छोड़ने के लिए ऑक्सीजन और ग्लूकोज का उपभोग करती हैं।",
+    "source_passage_id": "q1003_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1003_hi_p1",
+      "language": "hi",
+      "query_context": "पौधों में प्रकाश संश्लेषण कैसे काम करता है",
+      "url": "",
+      "original_length": 133,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 133
+  },
+  {
+    "chunk_id": "68a6693c76526d81",
+    "text": "Common symptoms of type 2 diabetes include excessive thirst (polydipsia), frequent urination (polyuria), increased hunger, extreme fatigue, blurry vision, slow-healing sores, tingling or numbness in hands or feet, and unexplained weight loss. In many cases, symptoms develop slowly over years.",
+    "source_passage_id": "q1004_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1004_en_p0",
+      "language": "en",
+      "query_context": "what are the main symptoms of type 2 diabetes",
+      "url": "",
+      "original_length": 293,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 293
+  },
+  {
+    "chunk_id": "4b25dcab0a933af6",
+    "text": "Type 2 diabetes is primarily managed through lifestyle changes such as diet modification, regular aerobic exercise, and medication such as metformin or insulin therapy when necessary.",
+    "source_passage_id": "q1004_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1004_en_p1",
+      "language": "en",
+      "query_context": "what are the main symptoms of type 2 diabetes",
+      "url": "",
+      "original_length": 183,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 183
+  },
+  {
+    "chunk_id": "f28a159a88be967c",
+    "text": "टाइप 2 मधुमेह के सामान्य लक्षणों में अत्यधिक प्यास लगना, बार-बार पेशाब आना, भूख में वृद्धि, अत्यधिक थकान, धुंधली दृष्टि, घावों का धीरे-धीरे भरना और बिना किसी कारण के वजन कम होना शामिल है।",
+    "source_passage_id": "q1004_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1004_hi_p0",
+      "language": "hi",
+      "query_context": "टाइप 2 मधुमेह के मुख्य लक्षण क्या हैं",
+      "url": "",
+      "original_length": 187,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 187
+  },
+  {
+    "chunk_id": "622cb3eed77b9a24",
+    "text": "टाइप 2 मधुमेह का प्रबंधन मुख्य रूप से जीवनशैली में बदलाव जैसे आहार संशोधन, नियमित व्यायाम और दवाओं के माध्यम से किया जाता है।",
+    "source_passage_id": "q1004_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1004_hi_p1",
+      "language": "hi",
+      "query_context": "टाइप 2 मधुमेह के मुख्य लक्षण क्या हैं",
+      "url": "",
+      "original_length": 125,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 125
+  },
+  {
+    "chunk_id": "f37cfd5b899fbbe5",
+    "text": "The speed of light in vacuum, commonly denoted c, is a universal physical constant exactly equal to 299,792,458 metres per second (approximately 300,000 kilometres per second, or 186,282 miles per second). According to special relativity, c is the upper speed limit for all matter and information in the universe.",
+    "source_passage_id": "q1005_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1005_en_p0",
+      "language": "en",
+      "query_context": "what is the speed of light in vacuum",
+      "url": "",
+      "original_length": 313,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 313
+  },
+  {
+    "chunk_id": "8181148f07caface",
+    "text": "Light travels slower in mediums like water (225,000 km/s) and glass (200,000 km/s) due to the refractive index of those materials.",
+    "source_passage_id": "q1005_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1005_en_p1",
+      "language": "en",
+      "query_context": "what is the speed of light in vacuum",
+      "url": "",
+      "original_length": 130,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 130
+  },
+  {
+    "chunk_id": "6a8ab92bb7c949bf",
+    "text": "निर्वात में प्रकाश की गति, जिसे आमतौर पर c द्वारा दर्शाया जाता है, एक सार्वभौमिक भौतिक स्थिरांक है जो ठीक 299,792,458 मीटर प्रति सेकंड (लगभग 300,000 किमी प्रति सेकंड) के बराबर है। विशेष सापेक्षता के अनुसार, c ब्रह्मांड में सभी पदार्थ और जानकारी के लिए अधिकतम गति सीमा है।",
+    "source_passage_id": "q1005_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1005_hi_p0",
+      "language": "hi",
+      "query_context": "निर्वात में प्रकाश की गति क्या है",
+      "url": "",
+      "original_length": 271,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 271
+  },
+  {
+    "chunk_id": "186d1b9336581291",
+    "text": "अपवर्तक सूचकांक के कारण पानी (225,000 किमी/सेकंड) और कांच (200,000 किमी/सेकंड) जैसे माध्यमों में प्रकाश धीमी गति से यात्रा करता है।",
+    "source_passage_id": "q1005_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1005_hi_p1",
+      "language": "hi",
+      "query_context": "निर्वात में प्रकाश की गति क्या है",
+      "url": "",
+      "original_length": 131,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 131
+  },
+  {
+    "chunk_id": "a594d8c8b0396160",
+    "text": "Ocean tides are the rise and fall of sea levels caused by the combined effects of the gravitational forces exerted by the Moon and the Sun, and the rotation of the Earth. The gravitational attraction between the Earth and the Moon creates tidal bulges on both sides of the Earth, leading to high and low tides roughly every 12 hours and 25 minutes.",
+    "source_passage_id": "q1006_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1006_en_p0",
+      "language": "en",
+      "query_context": "what causes tides on earth",
+      "url": "",
+      "original_length": 348,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 348
+  },
+  {
+    "chunk_id": "08c2f87db4130239",
+    "text": "Spring tides occur during full and new moons when the Sun, Moon, and Earth align, creating the largest tidal ranges.",
+    "source_passage_id": "q1006_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1006_en_p1",
+      "language": "en",
+      "query_context": "what causes tides on earth",
+      "url": "",
+      "original_length": 116,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 116
+  },
+  {
+    "chunk_id": "7c5985d08e9f5d23",
+    "text": "समुद्री ज्वार चंद्रमा और सूर्य द्वारा लगाए गए गुरुत्वाकर्षण बलों और पृथ्वी के घूमने के संयुक्त प्रभाव के कारण समुद्र के स्तर में उतार-चढ़ाव हैं। पृथ्वी और चंद्रमा के बीच गुरुत्वाकर्षण खिंचाव पृथ्वी के दोनों किनारों पर ज्वार का उभार बनाता है।",
+    "source_passage_id": "q1006_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1006_hi_p0",
+      "language": "hi",
+      "query_context": "पृथ्वी पर ज्वार-भाटा किसके कारण आता है",
+      "url": "",
+      "original_length": 241,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 241
+  },
+  {
+    "chunk_id": "296bcf98d1c79c62",
+    "text": "सूर्य, चंद्रमा और पृथ्वी के संरेखित होने पर पूर्णिमा और अमावस्या के दौरान बड़े ज्वार आते हैं।",
+    "source_passage_id": "q1006_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1006_hi_p1",
+      "language": "hi",
+      "query_context": "पृथ्वी पर ज्वार-भाटा किसके कारण आता है",
+      "url": "",
+      "original_length": 93,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 93
+  },
+  {
+    "chunk_id": "c3b5e6f9a759e829",
+    "text": "Jana Gana Mana is the national anthem of India. It was originally composed as Bharoto Bhagyo Bidhata in Bengali by polymath Rabindranath Tagore on 11 December 1911. The first stanza of the song was adopted by the Constituent Assembly of India as the National Anthem on 24 January 1950. A formal rendition takes 52 seconds.",
+    "source_passage_id": "q1007_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1007_en_p0",
+      "language": "en",
+      "query_context": "who wrote the Indian national anthem",
+      "url": "",
+      "original_length": 322,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 322
+  },
+  {
+    "chunk_id": "9c358cbbbbe6ef57",
+    "text": "Vande Mataram, composed in Sanskrit by Bankim Chandra Chatterjee, was designated as India's National Song.",
+    "source_passage_id": "q1007_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1007_en_p1",
+      "language": "en",
+      "query_context": "who wrote the Indian national anthem",
+      "url": "",
+      "original_length": 106,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 106
+  },
+  {
+    "chunk_id": "de747b962f020be5",
+    "text": "जन गण मन भारत का राष्ट्रगान है। यह मूल रूप से 11 दिसंबर 1911 को रवींद्रनाथ टैगोर द्वारा बंगाली में 'भारतो भाग्यो बिधाता' के रूप में रचा गया था। इस गीत के पहले पद को 24 जनवरी 1950 को भारत की संविधान सभा द्वारा राष्ट्रगान के रूप में अपनाया गया था।",
+    "source_passage_id": "q1007_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1007_hi_p0",
+      "language": "hi",
+      "query_context": "भारत का राष्ट्रगान किसने लिखा था",
+      "url": "",
+      "original_length": 245,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 245
+  },
+  {
+    "chunk_id": "7ef7804ef874b448",
+    "text": "बंकिम चंद्र चटर्जी द्वारा संस्कृत में रचित 'वंदे मातरम' को भारत का राष्ट्रीय गीत नामित किया गया था।",
+    "source_passage_id": "q1007_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1007_hi_p1",
+      "language": "hi",
+      "query_context": "भारत का राष्ट्रगान किसने लिखा था",
+      "url": "",
+      "original_length": 99,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 99
+  },
+  {
+    "chunk_id": "47da51e57bb3fd78",
+    "text": "Machine learning (ML) is a branch of artificial intelligence (AI) focused on building applications that learn from data and improve their accuracy over time without being explicitly programmed. Common paradigms include supervised learning, unsupervised learning, and reinforcement learning. Applications range from computer vision and speech recognition to autonomous driving and medical diagnosis.",
+    "source_passage_id": "q1008_en_p0",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1008_en_p0",
+      "language": "en",
+      "query_context": "what is machine learning and how is it used",
+      "url": "",
+      "original_length": 398,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 398
+  },
+  {
+    "chunk_id": "9b6bf78b3bd4d889",
+    "text": "Deep learning is a subset of machine learning based on artificial neural networks with multiple layers, mimicking the human brain's information processing.",
+    "source_passage_id": "q1008_en_p1",
+    "language": "en",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1008_en_p1",
+      "language": "en",
+      "query_context": "what is machine learning and how is it used",
+      "url": "",
+      "original_length": 155,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 155
+  },
+  {
+    "chunk_id": "68a1d841f4a64dc1",
+    "text": "मशीन लर्निंग (एमएल) कृत्रिम बुद्धिमत्ता (एआई) की एक शाखा है जो ऐसे अनुप्रयोगों के निर्माण पर केंद्रित है जो डेटा से सीखते हैं और समय के साथ अपनी सटीकता में सुधार करते हैं। इसके अनुप्रयोगों में कंप्यूटर विज़न, भाषण पहचान, स्वायत्त ड्राइविंग और चिकित्सा निदान शामिल हैं।",
+    "source_passage_id": "q1008_hi_p0",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1008_hi_p0",
+      "language": "hi",
+      "query_context": "मशीन लर्निंग क्या है और इसका उपयोग कैसे किया जाता है",
+      "url": "",
+      "original_length": 268,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 268
+  },
+  {
+    "chunk_id": "72e8d257a3555a0a",
+    "text": "डीप लर्निंग मानव मस्तिष्क के सूचना प्रसंस्करण की नकल करते हुए कई परतों वाले कृत्रिम तंत्रिका नेटवर्क पर आधारित मशीन लर्निंग का एक उपसमूह है।",
+    "source_passage_id": "q1008_hi_p1",
+    "language": "hi",
+    "strategy": "metadata_aware",
+    "metadata": {
+      "passage_id": "q1008_hi_p1",
+      "language": "hi",
+      "query_context": "मशीन लर्निंग क्या है और इसका उपयोग कैसे किया जाता है",
+      "url": "",
+      "original_length": 140,
+      "chunk_index": 0,
+      "is_single_chunk": true
+    },
+    "char_count": 140
+  }
+]

@@ -47,14 +47,26 @@ class MetadataAwareChunker:
         """
         Chunk a single MSMARCO-XI dataset record.
 
-        Expected record keys (all optional except 'passage'):
-            - passage / text / passage_text: The passage text.
-            - id / passage_id: Passage identifier.
-            - query / question: Associated query string.
-            - language / lang: Language code (e.g., 'en', 'hi').
-            - url: Source URL.
+        Handles both:
+        1. Flat passage records: {"passage": "...", "query": "...", "id": "..."}
+        2. Nested MSMARCO-XI records:
+           {
+               "query_id": 123,
+               "Eng_Query": "...",
+               "query": "...",
+               "target_lang": "hin_Deva",
+               "passages": {
+                   "English_passages": ["...", "..."],
+                   "Translated_passages": ["...", "..."],
+                   "is_selected": [1, 0]
+               }
+           }
         """
-        # ── Extract text ──────────────────────────────────────────────────
+        # ── Check for nested MSMARCO-XI format ────────────────────────────
+        if "passages" in record and isinstance(record["passages"], dict):
+            return self._chunk_nested_msmarco(record)
+
+        # ── Flat record handling ──────────────────────────────────────────
         text = (
             record.get("passage")
             or record.get("text")
@@ -69,7 +81,7 @@ class MetadataAwareChunker:
         # ── Extract metadata ──────────────────────────────────────────────
         passage_id = str(record.get("id") or record.get("passage_id") or "")
         language = record.get("language") or record.get("lang") or "en"
-        query_context = record.get("query") or record.get("question") or ""
+        query_context = record.get("query") or record.get("question") or record.get("Eng_Query") or ""
         url = record.get("url") or ""
 
         base_metadata: dict[str, Any] = {
@@ -119,6 +131,60 @@ class MetadataAwareChunker:
             )
 
         return result
+
+    def _chunk_nested_msmarco(self, record: dict[str, Any]) -> list[Chunk]:
+        """Extract and chunk all passages from a nested MSMARCO-XI record."""
+        query_id = str(record.get("query_id", "0"))
+        eng_query = record.get("Eng_Query", "")
+        trans_query = record.get("query", "")
+        eng_answer = record.get("Eng_Answer", "")
+        trans_answer = record.get("Answer", "")
+        target_lang = record.get("target_lang", "hi")
+        if "_" in target_lang:
+            target_lang = target_lang.split("_")[0]  # e.g., 'hin_Deva' -> 'hin'
+
+        passages_data = record.get("passages", {})
+        eng_passages = passages_data.get("English_passages", [])
+        trans_passages = passages_data.get("Translated_passages", [])
+        is_selected = passages_data.get("is_selected", [0] * max(len(eng_passages), len(trans_passages)))
+
+        chunks: list[Chunk] = []
+
+        # 1. Process English passages
+        for idx, passage_text in enumerate(eng_passages):
+            if not passage_text or not passage_text.strip():
+                continue
+            p_id = f"q{query_id}_en_p{idx}"
+            selected = bool(is_selected[idx]) if idx < len(is_selected) else False
+            flat_rec = {
+                "id": p_id,
+                "passage": passage_text,
+                "query": eng_query,
+                "language": "en",
+                "is_selected": selected,
+                "query_id": query_id,
+                "answer": eng_answer,
+            }
+            chunks.extend(self.chunk_record(flat_rec))
+
+        # 2. Process Translated passages
+        for idx, passage_text in enumerate(trans_passages):
+            if not passage_text or not passage_text.strip():
+                continue
+            p_id = f"q{query_id}_{target_lang}_p{idx}"
+            selected = bool(is_selected[idx]) if idx < len(is_selected) else False
+            flat_rec = {
+                "id": p_id,
+                "passage": passage_text,
+                "query": trans_query,
+                "language": target_lang,
+                "is_selected": selected,
+                "query_id": query_id,
+                "answer": trans_answer,
+            }
+            chunks.extend(self.chunk_record(flat_rec))
+
+        return chunks
 
     def chunk_batch(self, records: list[dict[str, Any]]) -> list[Chunk]:
         """Chunk a list of records and return all chunks flat."""
