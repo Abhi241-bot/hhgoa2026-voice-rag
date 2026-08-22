@@ -40,3 +40,8 @@ services:
 
       - key: PYTHONDONTWRITEBYTECODE
         value: "1"
+      - key: PREWARM_PIPELINE
+        value: "false"
+
+      - key: CHROMA_DB_PATH
+        value: "./chroma_db"
