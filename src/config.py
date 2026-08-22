@@ -53,6 +53,9 @@ class Settings(BaseSettings):
     default_chunk_size: int = Field(default=512, description="Default chunk size in characters")
     default_chunk_overlap: int = Field(default=64, description="Default chunk overlap in characters")
 
+    # ── Retrieval options ─────────────────────────────────────────────────
+    use_bm25: bool = Field(default=True, description="Enable BM25 sparse retrieval (set false to save memory)")
+
 
 # Singleton settings instance
 settings = Settings()

@@ -45,3 +45,5 @@ services:
 
       - key: CHROMA_DB_PATH
         value: "./chroma_db"
+      - key: USE_BM25
+        value: "false"

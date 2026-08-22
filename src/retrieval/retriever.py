@@ -100,7 +100,7 @@ class HybridRetriever:
 
         # Ensure BM25 index is built lazily to avoid loading all documents
         # into memory at pipeline startup on memory-constrained hosts.
-        if self._bm25 is None:
+        if settings.use_bm25 and self._bm25 is None:
             self._load_bm25_index()
 
         # ── 1. Dense retrieval ─────────────────────────────────────────
@@ -191,6 +191,10 @@ class HybridRetriever:
         Returns:
             List of (chunk_id, bm25_score, document_text, metadata) tuples.
         """
+        # If BM25 is disabled in settings, skip sparse retrieval entirely.
+        if not settings.use_bm25:
+            return []
+
         if self._bm25 is None or not self._bm25_docs:
             return []
 
