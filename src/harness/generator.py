@@ -76,8 +76,11 @@ class GeneratorTool:
         self.model = model or settings.llm_model
         self.max_tokens = max_tokens or settings.llm_max_tokens
         self.temperature = temperature if temperature is not None else settings.llm_temperature
-        self._client = Groq(api_key=api_key or settings.groq_api_key)
-        log.info("generator_init", model=self.model)
+        self._api_key = api_key or settings.groq_api_key
+        # Delay creating the Groq client until generation time to avoid
+        # allocating resources at application startup on small hosts.
+        self._client: Optional[Groq] = None
+        log.info("generator_init_configured", model=self.model)
 
     def generate(
         self,
@@ -101,6 +104,10 @@ class GeneratorTool:
         )
 
         start = time.perf_counter()
+
+        # Lazy-init Groq client
+        if self._client is None:
+            self._client = Groq(api_key=self._api_key)
 
         completion = self._client.chat.completions.create(
             model=self.model,

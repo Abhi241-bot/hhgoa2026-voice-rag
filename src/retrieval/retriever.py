@@ -58,9 +58,10 @@ class HybridRetriever:
         self.dense_candidates = dense_candidates
         self.sparse_candidates = sparse_candidates
 
-        model_name = embedding_model_name or settings.embedding_model
-        log.info("loading_embedding_model", model=model_name)
-        self._model = SentenceTransformer(model_name)
+        self._model_name = embedding_model_name or settings.embedding_model
+        log.info("embedding_model_configured", model=self._model_name)
+        # Delay heavy SentenceTransformer instantiation until actually needed
+        self._model: Optional[SentenceTransformer] = None
 
         log.info("connecting_to_chroma", collection=collection_name)
         client = get_chroma_client(persist_path)
@@ -71,7 +72,9 @@ class HybridRetriever:
         self._bm25_docs: list[str] = []
         self._bm25_ids: list[str] = []
         self._bm25_metadatas: list[dict] = []
-        self._load_bm25_index()
+        # _load_bm25_index() is intentionally not called here to avoid
+        # loading the entire corpus into memory during startup. The
+        # index will be built lazily on first retrieval request.
 
     # ── Public API ────────────────────────────────────────────────────────
 
@@ -94,6 +97,11 @@ class HybridRetriever:
         """
         k = top_k or self.top_k
         start = time.perf_counter()
+
+        # Ensure BM25 index is built lazily to avoid loading all documents
+        # into memory at pipeline startup on memory-constrained hosts.
+        if self._bm25 is None:
+            self._load_bm25_index()
 
         # ── 1. Dense retrieval ─────────────────────────────────────────
         dense_results = self._dense_retrieve(query, self.dense_candidates, language_filter)
@@ -132,7 +140,9 @@ class HybridRetriever:
         Returns:
             List of (chunk_id, cosine_score, document_text, metadata) tuples.
         """
-        query_embedding = self._model.encode([query], show_progress_bar=False)[0].tolist()
+        # Lazy-load embedding model to avoid loading it at startup
+        model = self._get_model()
+        query_embedding = model.encode([query], show_progress_bar=False)[0].tolist()
 
         where_filter = None
         if language_filter:
@@ -160,6 +170,13 @@ class HybridRetriever:
             dense_results.append((chunk_id, similarity, doc, meta))
 
         return dense_results
+
+    def _get_model(self) -> SentenceTransformer:
+        """Instantiate the SentenceTransformer model on first use."""
+        if self._model is None:
+            log.info("loading_sentence_transformer", model=self._model_name)
+            self._model = SentenceTransformer(self._model_name)
+        return self._model
 
     # ── Sparse retrieval ──────────────────────────────────────────────────
 

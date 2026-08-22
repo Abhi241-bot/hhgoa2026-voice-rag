@@ -68,7 +68,9 @@ class PipelineHarness:
     ) -> None:
         self.top_k = top_k or settings.top_k_retrieval
         self._retriever = retriever
-        self._generator = generator or GeneratorTool()
+        # Delay creating GeneratorTool until generation stage to avoid
+        # allocating external clients at pipeline construction time.
+        self._generator = generator
         self._guardrails = guardrail_manager or GuardrailManager()
         self._stt = stt_tool
         log.info("harness_init", top_k=self.top_k)
@@ -276,6 +278,8 @@ class PipelineHarness:
     )
     def _run_generation(self, query: str, retrieval_result: RetrievalResult):
         """LLM generation with exponential backoff retry."""
+        if self._generator is None:
+            self._generator = GeneratorTool()
         return self._generator.generate(
             query=query,
             contexts=retrieval_result.contexts,

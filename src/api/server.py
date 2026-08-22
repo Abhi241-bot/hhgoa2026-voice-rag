@@ -37,8 +37,14 @@ FRONTEND_DIR = Path(__file__).parent.parent.parent / "frontend"
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Warm up the pipeline in background on startup to reduce first-request latency."""
-    import asyncio
+    # By default we do NOT pre-warm the pipeline to avoid high memory
+    # usage on tiny instances (e.g. Render free/small plans). Set
+    # `PREWARM_PIPELINE=1` or `PREWARM_PIPELINE=true` in the environment
+    # to enable background warmup if you have sufficient memory.
     import threading
+    import os
+
+    prewarm = os.getenv("PREWARM_PIPELINE", "false").lower() in ("1", "true", "yes")
 
     def _warm():
         try:
@@ -46,7 +52,8 @@ async def lifespan(app: FastAPI):
         except Exception as exc:
             log.warning("pipeline_warmup_failed", error=str(exc))
 
-    threading.Thread(target=_warm, daemon=True).start()
+    if prewarm:
+        threading.Thread(target=_warm, daemon=True).start()
     yield
 
 
