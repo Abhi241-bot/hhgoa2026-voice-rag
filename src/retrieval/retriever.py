@@ -183,6 +183,7 @@ class HybridRetriever:
         """Instantiate the SentenceTransformer model on first use."""
         if self._model is None:
             log.info("loading_sentence_transformer", model=self._model_name)
+            from sentence_transformers import SentenceTransformer
             self._model = SentenceTransformer(self._model_name)
         return self._model
 
