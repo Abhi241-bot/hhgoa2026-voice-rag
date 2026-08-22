@@ -1,0 +1,42 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# render.yaml — Render.com deployment config for HH Goa 2026 Voice RAG
+# Docs: https://render.com/docs/blueprint-spec
+# ─────────────────────────────────────────────────────────────────────────────
+
+services:
+  - type: web
+    name: hhgoa2026-voice-rag
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free                    # upgrade to starter ($7/mo) for always-on
+    healthCheckPath: /health
+
+    # Persistent disk for ChromaDB vector store
+    # Without this, the index is rebuilt from data/ on every deploy (fine for demo)
+    # Uncomment to persist across deploys (requires paid plan)
+    # disk:
+    #   name: chroma-data
+    #   mountPath: /app/chroma_db
+    #   sizeGB: 1
+
+    envVars:
+      # ── Required: set these in the Render Dashboard → Environment ──
+      - key: GROQ_API_KEY
+        sync: false               # must be set manually in dashboard
+
+      - key: ELEVENLABS_API_KEY
+        sync: false               # must be set manually in dashboard
+
+      # ── Optional ──
+      - key: OPENAI_API_KEY
+        sync: false               # for OpenAI moderation (guardrails); leave blank to skip
+
+      # ── Runtime settings ──
+      - key: PORT
+        value: "8000"
+
+      - key: PYTHONUNBUFFERED
+        value: "1"
+
+      - key: PYTHONDONTWRITEBYTECODE
+        value: "1"

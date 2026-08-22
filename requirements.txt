@@ -32,6 +32,7 @@ scikit-learn>=1.4.0
 fastapi>=0.111.0
 uvicorn>=0.30.0
 python-multipart>=0.0.9
+aiofiles>=23.2.0  # required by FastAPI StaticFiles
 
 # UI
 gradio>=4.37.0

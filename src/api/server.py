@@ -6,6 +6,7 @@ Endpoints:
     POST /query/voice      — voice (audio file upload) input
     GET  /health           — health check
     GET  /stats            — pipeline statistics
+    GET  /                 — serves the frontend HTML UI
 
 Run with: uvicorn src.api.server:app --host 0.0.0.0 --port 8000
 """
@@ -13,10 +14,15 @@ Run with: uvicorn src.api.server:app --host 0.0.0.0 --port 8000
 from __future__ import annotations
 
 import io
+import os
+from contextlib import asynccontextmanager
+from pathlib import Path
 from typing import Optional
 
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from src.logger import get_logger
@@ -24,10 +30,31 @@ from src.models import AudioInput, PipelineResponse, TextQuery
 
 log = get_logger("api.server")
 
+# ── Frontend static files ─────────────────────────────────────────────────────
+FRONTEND_DIR = Path(__file__).parent.parent.parent / "frontend"
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Warm up the pipeline in background on startup to reduce first-request latency."""
+    import asyncio
+    import threading
+
+    def _warm():
+        try:
+            get_pipeline()
+        except Exception as exc:
+            log.warning("pipeline_warmup_failed", error=str(exc))
+
+    threading.Thread(target=_warm, daemon=True).start()
+    yield
+
+
 app = FastAPI(
     title="Voice-Enabled RAG API",
     description="HH Goa 2026 — Voice-Enabled RAG pipeline with hybrid retrieval and guardrails",
     version="1.0.0",
+    lifespan=lifespan,
 )
 
 app.add_middleware(
@@ -71,6 +98,15 @@ class TextQueryRequest(BaseModel):
 async def health_check():
     """Health check endpoint."""
     return {"status": "ok", "service": "voice-rag-pipeline"}
+
+
+@app.get("/", include_in_schema=False)
+async def serve_frontend():
+    """Serve the frontend index.html at the root URL."""
+    index = FRONTEND_DIR / "index.html"
+    if index.exists():
+        return FileResponse(str(index), media_type="text/html")
+    return {"message": "Frontend not found. Run with frontend/ directory present."}
 
 
 @app.post("/query/text", response_model=PipelineResponse)
@@ -128,3 +164,9 @@ async def get_stats():
         }
     except Exception as e:
         return {"status": "error", "message": str(e)}
+
+
+# ── Serve frontend static assets (JS, SVG, etc.) ─────────────────────────────
+# Mounted last so API routes take priority over file paths.
+if FRONTEND_DIR.exists():
+    app.mount("/", StaticFiles(directory=str(FRONTEND_DIR), html=True), name="frontend")

@@ -1,0 +1,29 @@
+# Git
+.git
+.gitattributes
+.gitignore
+
+# Python bytecode
+__pycache__
+*.py[cod]
+*.pyo
+*.pyd
+
+# Test artifacts
+.pytest_cache
+tests/
+results/
+notebooks/
+
+# Dev environment
+.env
+.env.example
+*.env
+
+# Local ChromaDB (will be rebuilt from data/ on startup)
+chroma_db/
+
+# Misc
+*.md
+!README.md
+.thumbnail
