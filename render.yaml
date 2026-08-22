@@ -47,3 +47,7 @@ services:
         value: "./chroma_db"
       - key: USE_BM25
         value: "false"
+      - key: USE_REMOTE_EMBEDDINGS
+        value: "false"
+      - key: REMOTE_EMBEDDING_MODEL
+        value: "text-embedding-3-small"

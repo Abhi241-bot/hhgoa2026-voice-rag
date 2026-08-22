@@ -55,6 +55,15 @@ class Settings(BaseSettings):
 
     # ── Retrieval options ─────────────────────────────────────────────────
     use_bm25: bool = Field(default=True, description="Enable BM25 sparse retrieval (set false to save memory)")
+    use_remote_embeddings: bool = Field(
+        default=False,
+        description="Use remote embedding API (OpenAI) instead of local SentenceTransformer",
+    )
+
+    remote_embedding_model: str = Field(
+        default="text-embedding-3-small",
+        description="Remote embedding model name (when use_remote_embeddings=true)",
+    )
 
 
 # Singleton settings instance

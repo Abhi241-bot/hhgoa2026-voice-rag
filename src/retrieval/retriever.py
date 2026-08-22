@@ -19,6 +19,7 @@ from typing import Optional
 import numpy as np
 from rank_bm25 import BM25Okapi
 from sentence_transformers import SentenceTransformer
+import openai
 
 from src.config import settings
 from src.logger import get_logger
@@ -140,9 +141,17 @@ class HybridRetriever:
         Returns:
             List of (chunk_id, cosine_score, document_text, metadata) tuples.
         """
-        # Lazy-load embedding model to avoid loading it at startup
-        model = self._get_model()
-        query_embedding = model.encode([query], show_progress_bar=False)[0].tolist()
+        # Compute query embedding using remote API or local model depending on config
+        if settings.use_remote_embeddings:
+            if not settings.openai_api_key:
+                raise RuntimeError("OPENAI_API_KEY is required for remote embeddings")
+            openai.api_key = settings.openai_api_key
+            resp = openai.Embedding.create(model=settings.remote_embedding_model, input=[query])
+            query_embedding = resp.data[0].embedding
+        else:
+            # Lazy-load local SentenceTransformer
+            model = self._get_model()
+            query_embedding = model.encode([query], show_progress_bar=False)[0].tolist()
 
         where_filter = None
         if language_filter:
